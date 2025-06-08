@@ -15,7 +15,7 @@ class GoogleDriveClient:
     
     def __init__(self):
         self.service = self._authenticate()
-        self.folder_id = settings.google_drive_folder_id
+        self.folder_id = None #settings.google_drive_folder_id
     
     def _authenticate(self):
         """Authenticate with Google Drive API"""
@@ -84,7 +84,6 @@ class GoogleDriveClient:
             folder_name = folder_path.split('/')[-1]
             parent_path = '/'.join(folder_path.split('/')[:-1])
             parent_id = self._get_folder_id(parent_path) if parent_path != "trinity_memory" else self.folder_id
-            
             if parent_id:
                 self._create_folder(folder_name, parent_id)
         

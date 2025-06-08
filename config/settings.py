@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     nas_port: int = 5000
     nas_username: str = "admin"
     nas_password: str = ""
-    nas_base_path: str = "/trinity_memory"
+    nas_base_path: str = "/home"
     
     # Google Drive Configuration
     google_credentials_path: str = "credentials/google_credentials.json"

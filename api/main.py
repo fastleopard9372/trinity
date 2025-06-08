@@ -71,6 +71,28 @@ async def lifespan(app: FastAPI):
     
     logger.info("Trinity Memory System API started successfully")
 
+@app.get("/init")
+async def init():
+    """Initialize system on startup"""
+    logger.info("Starting Trinity Memory System API")
+    
+    # Create necessary directories
+    os.makedirs("data", exist_ok=True)
+    os.makedirs("logs", exist_ok=True)
+    os.makedirs("temp", exist_ok=True)
+    os.makedirs("credentials", exist_ok=True)
+    
+    for directory in settings.watch_dirs_list:
+        os.makedirs(directory, exist_ok=True)
+    
+    # Initialize folder structures
+    nas_client.create_folder_structure()
+    gdrive_client.create_folder_structure()
+    
+    logger.info("Trinity Memory System API started successfully")
+    return JSONResponse(content={"message": "System initialized successfully"})
+
+
 @app.get("/")
 async def root():
     return {"message": "Trinity Memory System API", "version": "1.0.0"}

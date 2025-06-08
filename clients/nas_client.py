@@ -12,7 +12,7 @@ class NASClient:
         self.port = settings.nas_port
         self.username = settings.nas_username
         self.password = settings.nas_password
-        self.base_path = settings.nas_base_path
+        self.base_path = "/home" #settings.nas_base_path
         # Initialize Synology API clients
         try:
             self.fs = filestation.FileStation(
