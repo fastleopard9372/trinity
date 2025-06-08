@@ -276,7 +276,7 @@ async def search_memories(
                 id=memory.id,
                 content=memory.content,
                 title=memory.title or "",
-                tags=memory.tags if memory.tags else [],
+                tags=json.loads(memory.tags) if memory.tags else [],
                 category=memory.category or "",
                 timestamp=memory.timestamp.isoformat() if memory.timestamp else "",
                 file_path=memory.file_path,

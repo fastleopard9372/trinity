@@ -42,7 +42,7 @@ class TrinitySystem:
                 app,
                 host=settings.api_host,
                 port=settings.api_port,
-                log_level=settings.log_level.lower()
+                log_level=settings.log_level.lower(),
             )
         
         api_thread = threading.Thread(target=run_api, daemon=True)

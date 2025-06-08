@@ -128,7 +128,7 @@ class MemoryProcessor:
             
             # Save to storage systems
             nas_path = await self._save_to_nas(command.content, command.category, safe_filename)
-            gdrive_file_id = await self._save_to_gdrive(command.content, safe_filename)
+            gdrive_file_id = await self._save_to_gdrive(command.content, command.category, safe_filename)
             
             # Save to database
             memory_data = {
@@ -233,22 +233,31 @@ class MemoryProcessor:
             logger.error(f"NAS save error: {e}")
             return None
     
-    async def _save_to_gdrive(self, content: str, filename: str) -> str:
+    async def _save_to_gdrive(self, content: str, category: str, filename: str) -> str:
         """Save content to Google Drive"""
         try:
             # Create temporary file
             temp_file = f"temp/{filename}"
+            os.makedirs("temp", exist_ok=True)
             
             async with aiofiles.open(temp_file, 'w', encoding='utf-8') as f:
                 await f.write(content)
             
-            # Upload to Google Drive
+            # Determine target path
+            path = "trinity_memory"
+            if category:
+                path += f"/categories/{category}"
+
+            # Get folder ID for path
+            folder_id = self.gdrive_client._get_folder_id(path)
+
+            # Upload file
             file_id = self.gdrive_client.upload_file(
-                temp_file, 
-                filename, 
-                self.gdrive_client.folder_id
+                temp_file,
+                filename,
+                folder_id
             )
-            
+                
             # Clean up temp file
             try:
                 os.remove(temp_file)

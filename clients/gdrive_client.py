@@ -15,7 +15,8 @@ class GoogleDriveClient:
     
     def __init__(self):
         self.service = self._authenticate()
-        self.folder_id = None #settings.google_drive_folder_id
+        self.rclone_remote_name = "trinity_gdrive"
+        self.rclone_config_path = "credentials/rclone.conf"
     
     def _authenticate(self):
         """Authenticate with Google Drive API"""
