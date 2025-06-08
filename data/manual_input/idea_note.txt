@@ -1,0 +1,6 @@
+Remember this idea: Build an AI assistant that can remember everything.
+
+Tags: ai, idea, innovation
+Category: ideas
+
+The assistant should have persistent memory across sessions and be able to recall specific information when needed.
