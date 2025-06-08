@@ -1,6 +1,0 @@
-Save this: This is a test memory for the Trinity system.
-Tags: test, demo, health
-Category: health
-Priority: 1
-
-This memory should be processed automatically by the file watcher.

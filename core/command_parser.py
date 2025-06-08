@@ -46,7 +46,8 @@ class CommandParser:
             'ideas': ['idea', 'thought', 'brainstorm', 'concept', 'innovation'],
             'tasks': ['task', 'todo', 'work', 'job', 'assignment'],
             'jobs': ['freelance', 'project', 'client', 'proposal', 'contract'],
-            'personal': ['personal', 'private', 'diary', 'journal']
+            'personal': ['personal', 'private', 'diary', 'journal'],
+            'other': ['miscellaneous', 'general', 'other', 'random']
         }
     
     def parse(self, text: str) -> MemoryCommand:

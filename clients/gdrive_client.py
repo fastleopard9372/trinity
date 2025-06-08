@@ -36,7 +36,7 @@ class GoogleDriveClient:
                 
                 flow = InstalledAppFlow.from_client_secrets_file(
                     settings.google_credentials_path, self.SCOPES)
-                creds = flow.run_local_server(port=8080)
+                creds = flow.run_local_server(port=5000)
             
             # Save credentials for next run
             os.makedirs('credentials', exist_ok=True)

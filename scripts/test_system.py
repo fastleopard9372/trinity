@@ -84,7 +84,7 @@ def test_nas_connection():
         os.makedirs("temp", exist_ok=True)
         with open(test_file, 'w') as f:
             f.write(test_content)
-        
+            
         nas_path = nas_client.save_memory_content(test_content, "test", "nas_test.txt")
         
         if nas_path:
@@ -92,7 +92,7 @@ def test_nas_connection():
         else:
             logger.error( f"NAS file upload failed")
         
-        os.remove(test_file)
+        #os.remove(test_file)
     else:
         logger.error("NAS connection failed")
 
@@ -113,7 +113,7 @@ def test_google_drive():
         with open(test_file, 'w') as f:
             f.write(test_content)
         
-        file_id = gdrive_client.upload_file(test_file, "gdrive_test.txt")
+        file_id = gdrive_client.upload_file(test_file, "trinity_memory/gdrive_test.txt")
         
         if file_id:
             logger.info(f"Google Drive file upload successful: {file_id}")
@@ -186,7 +186,7 @@ The file watcher should detect this file and process it automatically.
 
 def main():
     """Run all tests"""
-    logger.info("🧪 Starting Trinity Memory System tests...")
+    logger.info("Starting Trinity Memory System tests...")
     
     # Run tests
     test_command_parser()
@@ -196,7 +196,7 @@ def main():
     test_api_endpoints()
     test_file_watcher()
     
-    logger.info("🏁 All tests completed! Check the logs for results.")
+    logger.info("All tests completed! Check the logs for results.")
 
 if __name__ == "__main__":
     main()

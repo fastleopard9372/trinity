@@ -12,8 +12,7 @@ class NASClient:
         self.port = settings.nas_port
         self.username = settings.nas_username
         self.password = settings.nas_password
-        self.base_path = "/home" #settings.nas_base_path
-        # Initialize Synology API clients
+        self.base_path = "/home/trinityai/memory" #settings.nas_base_path
         try:
             self.fs = filestation.FileStation(
                 ip_address=self.host,
@@ -30,24 +29,25 @@ class NASClient:
     def create_folder_structure(self) -> bool:
         """Create the basic folder structure on NAS"""
         folders = [
-            f"{self.base_path}/agents",
-            f"{self.base_path}/agents/freelance",
-            f"{self.base_path}/agents/personal",
-            f"{self.base_path}/categories",
-            f"{self.base_path}/categories/health",
-            f"{self.base_path}/categories/finance",
-            f"{self.base_path}/categories/ideas",
-            f"{self.base_path}/categories/tasks",
-            f"{self.base_path}/categories/jobs",
-            f"{self.base_path}/logs",
-            f"{self.base_path}/metadata",
-            f"{self.base_path}/backups",
-            f"{self.base_path}/inbox"
+            "agents",
+            "agents/freelance",
+            "agents/personal",
+            "categories",
+            "categories/health",
+            "categories/finance",
+            "categories/ideas",
+            "categories/tasks",
+            "categories/jobs",
+            "categories/test",
+            "logs",
+            "metadata",
+            "backups",
+            "inbox"
         ]
         for folder in folders:
             try:
-                self.fs.create_folder(self.base_path)
-                logger.info(f"Created folder in NAS: {folder}")
+                response = self.fs.create_folder(self.base_path, folder)
+                logger.info(f"Create folder response for {folder}: {response}")
             except Exception as e:
                 # Folder might already exist
                 logger.debug(f"Folder creation info for {folder}: {e}")
@@ -61,7 +61,7 @@ class NASClient:
             return False
         
         try:
-            self.fs.upload_file(local_path, remote_path)
+            self.fs.upload_file(remote_path, local_path)
             logger.info(f"Uploaded file: {local_path} -> {remote_path}")
             return True
         except Exception as e:
@@ -107,7 +107,7 @@ class NASClient:
         try:
             with open(temp_path, 'w', encoding='utf-8') as f:
                 f.write(content)
-            
+                
             if self.upload_file(temp_path, file_path):
                 os.remove(temp_path)
                 return file_path
