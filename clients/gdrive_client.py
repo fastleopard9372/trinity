@@ -52,16 +52,12 @@ class GoogleDriveClient:
             return None
     
     def create_folder_structure(self) -> bool:
-        """Create folder structure in Google Drive"""
         if not self.service:
             return False
-        
+
         folders = [
-            "trinity_memory",
-            "trinity_memory/agents",
             "trinity_memory/agents/freelance",
             "trinity_memory/agents/personal",
-            "trinity_memory/categories",
             "trinity_memory/categories/health",
             "trinity_memory/categories/finance",
             "trinity_memory/categories/ideas",
@@ -71,23 +67,19 @@ class GoogleDriveClient:
             "trinity_memory/metadata",
             "trinity_memory/backups"
         ]
-        
-        # Create main folder if needed
-        if not self.folder_id:
-            main_folder = self._create_folder("trinity_memory", None)
-            if main_folder:
-                self.folder_id = main_folder['id']
-                logger.info(f"Created main Trinity folder: {self.folder_id}")
-        
-        # Create subfolders
-        for folder_path in folders[1:]:  # Skip main folder
-            folder_name = folder_path.split('/')[-1]
-            parent_path = '/'.join(folder_path.split('/')[:-1])
-            parent_id = self._get_folder_id(parent_path) if parent_path != "trinity_memory" else self.folder_id
-            if parent_id:
-                self._create_folder(folder_name, parent_id)
-        
+
+        # Set root folder ID
+        self.folder_id = self._get_folder_id("trinity_memory")
+
+        for path in folders:
+            folder_id = self._get_folder_id(path)
+            if folder_id:
+                logger.info(f"Ensured folder: {path}")
+            else:
+                logger.error(f"Failed to create or locate folder: {path}")
+
         return True
+
     
     def _create_folder(self, name: str, parent_id: Optional[str]) -> Optional[Dict]:
         """Create a folder in Google Drive"""
@@ -110,10 +102,36 @@ class GoogleDriveClient:
             logger.error(f"Failed to create folder {name}: {e}")
             return None
     
-    def _get_folder_id(self, folder_path: str) -> Optional[str]:
-        """Get folder ID by path"""
-        # Simplified implementation - in production, you'd want proper path traversal
-        return self.folder_id
+    def _get_folder_id(self, path: str) -> Optional[str]:
+        if not self.service:
+            return None
+
+        folder_names = path.strip("/").split("/")
+        parent_id = "root"
+
+        for folder_name in folder_names:
+            query = f"name='{folder_name}' and mimeType='application/vnd.google-apps.folder' and '{parent_id}' in parents and trashed=false"
+            response = self.service.files().list(
+                q=query,
+                spaces='drive',
+                fields='files(id, name)',
+                pageSize=1
+            ).execute()
+            files = response.get('files', [])
+
+            if files:
+                parent_id = files[0]['id']
+            else:
+                metadata = {
+                    'name': folder_name,
+                    'mimeType': 'application/vnd.google-apps.folder',
+                    'parents': [parent_id]
+                }
+                folder = self.service.files().create(body=metadata, fields='id').execute()
+                logger.info(f"Created folder: {folder_name}")
+                parent_id = folder['id']
+
+        return parent_id
     
     def upload_file(self, local_path: str, remote_name: str, folder_id: Optional[str] = None) -> Optional[str]:
         """Upload file to Google Drive"""

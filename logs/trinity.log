@@ -3227,3 +3227,294 @@
 2025-06-08 23:28:36,039 - trinity - INFO - API available at: http://localhost:5000
 2025-06-08 23:28:36,039 - trinity - INFO - Drop files in watch directories to create memories
 2025-06-08 23:28:36,039 - trinity - INFO - Press Ctrl+C to stop
+2025-06-08 23:28:38,728 - trinity - INFO - Successfully connected to NAS
+2025-06-08 23:28:38,733 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-08 23:28:38,738 - trinity - INFO - Watching directory: data/inbox
+2025-06-08 23:28:38,738 - trinity - INFO - Watching directory: data/manual_input
+2025-06-08 23:28:38,738 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-08 23:28:38,738 - trinity - INFO - Started watching: data/inbox
+2025-06-08 23:28:38,740 - trinity - INFO - Started watching: data/manual_input
+2025-06-08 23:28:38,741 - trinity - INFO - Memory listener started successfully
+2025-06-08 23:28:38,742 - trinity - INFO - Watching 2 directories:
+2025-06-08 23:28:38,743 - trinity - INFO -    - D:\My Data\Trinity\data\inbox
+2025-06-08 23:28:38,743 - trinity - INFO -    - D:\My Data\Trinity\data\manual_input
+2025-06-08 23:28:38,743 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-08 23:28:38,743 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-08 23:28:58,147 - trinity - INFO - Starting Trinity Memory System API
+2025-06-08 23:28:59,069 - trinity - INFO - Create folder response for agents: {'data': {'folders': [{'isdir': True, 'name': 'agents', 'path': '/home/trinityai/memory/agents'}]}, 'success': True}
+2025-06-08 23:28:59,903 - trinity - INFO - Create folder response for agents/freelance: {'data': {'folders': [{'isdir': True, 'name': 'agents/freelance', 'path': '/home/trinityai/memory/agents/freelance'}]}, 'success': True}
+2025-06-08 23:29:00,923 - trinity - INFO - Create folder response for agents/personal: {'data': {'folders': [{'isdir': True, 'name': 'agents/personal', 'path': '/home/trinityai/memory/agents/personal'}]}, 'success': True}
+2025-06-08 23:29:01,873 - trinity - INFO - Create folder response for categories: {'data': {'folders': [{'isdir': True, 'name': 'categories', 'path': '/home/trinityai/memory/categories'}]}, 'success': True}
+2025-06-08 23:29:02,736 - trinity - INFO - Create folder response for categories/health: {'data': {'folders': [{'isdir': True, 'name': 'categories/health', 'path': '/home/trinityai/memory/categories/health'}]}, 'success': True}
+2025-06-08 23:29:03,586 - trinity - INFO - Create folder response for categories/finance: {'data': {'folders': [{'isdir': True, 'name': 'categories/finance', 'path': '/home/trinityai/memory/categories/finance'}]}, 'success': True}
+2025-06-08 23:29:04,428 - trinity - INFO - Create folder response for categories/ideas: {'data': {'folders': [{'isdir': True, 'name': 'categories/ideas', 'path': '/home/trinityai/memory/categories/ideas'}]}, 'success': True}
+2025-06-08 23:29:05,331 - trinity - INFO - Create folder response for categories/tasks: {'data': {'folders': [{'isdir': True, 'name': 'categories/tasks', 'path': '/home/trinityai/memory/categories/tasks'}]}, 'success': True}
+2025-06-08 23:29:06,257 - trinity - INFO - Create folder response for categories/jobs: {'data': {'folders': [{'isdir': True, 'name': 'categories/jobs', 'path': '/home/trinityai/memory/categories/jobs'}]}, 'success': True}
+2025-06-08 23:29:07,173 - trinity - INFO - Create folder response for categories/test: {'data': {'folders': [{'isdir': True, 'name': 'categories/test', 'path': '/home/trinityai/memory/categories/test'}]}, 'success': True}
+2025-06-08 23:29:08,071 - trinity - INFO - Create folder response for logs: {'data': {'folders': [{'isdir': True, 'name': 'logs', 'path': '/home/trinityai/memory/logs'}]}, 'success': True}
+2025-06-08 23:29:08,920 - trinity - INFO - Create folder response for metadata: {'data': {'folders': [{'isdir': True, 'name': 'metadata', 'path': '/home/trinityai/memory/metadata'}]}, 'success': True}
+2025-06-08 23:29:09,776 - trinity - INFO - Create folder response for backups: {'data': {'folders': [{'isdir': True, 'name': 'backups', 'path': '/home/trinityai/memory/backups'}]}, 'success': True}
+2025-06-08 23:29:10,606 - trinity - INFO - Create folder response for inbox: {'data': {'folders': [{'isdir': True, 'name': 'inbox', 'path': '/home/trinityai/memory/inbox'}]}, 'success': True}
+2025-06-08 23:29:12,647 - trinity - INFO - Created Google Drive folder: trinity_memory
+2025-06-08 23:29:12,647 - trinity - INFO - Created main Trinity folder: 1H909cyeqbJMTMnYECaTRe1Ym695uV2jB
+2025-06-08 23:29:13,591 - trinity - INFO - Created Google Drive folder: agents
+2025-06-08 23:29:14,663 - trinity - INFO - Created Google Drive folder: freelance
+2025-06-08 23:29:15,621 - trinity - INFO - Created Google Drive folder: personal
+2025-06-08 23:29:16,583 - trinity - INFO - Created Google Drive folder: categories
+2025-06-08 23:29:17,521 - trinity - INFO - Created Google Drive folder: health
+2025-06-08 23:29:18,541 - trinity - INFO - Created Google Drive folder: finance
+2025-06-08 23:29:19,629 - trinity - INFO - Created Google Drive folder: ideas
+2025-06-08 23:29:21,760 - trinity - INFO - Created Google Drive folder: tasks
+2025-06-08 23:29:22,744 - trinity - INFO - Created Google Drive folder: jobs
+2025-06-08 23:29:23,737 - trinity - INFO - Created Google Drive folder: logs
+2025-06-08 23:29:24,682 - trinity - INFO - Created Google Drive folder: metadata
+2025-06-08 23:29:25,684 - trinity - INFO - Created Google Drive folder: backups
+2025-06-08 23:29:25,684 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-08 23:30:00,783 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-08 23:35:00,982 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-08 23:40:00,125 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-08 23:45:00,254 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-08 23:50:00,375 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-08 23:55:00,507 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:00:00,626 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:05:00,750 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:10:00,868 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:15:00,999 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:20:00,125 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:25:00,245 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:30:00,377 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:35:00,512 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 00:37:38,449 - trinity - INFO - File modified: data/manual_input\idea_note.txt
+2025-06-09 00:37:38,453 - trinity - INFO - Processing file: data/manual_input\idea_note.txt
+2025-06-09 00:37:40,460 - trinity - INFO - Parsed command: save - ideas - 3 tags
+2025-06-09 00:37:40,461 - trinity - INFO - Parsed command - Action: save, Category: ideas
+2025-06-09 00:37:41,387 - trinity - INFO - Uploaded file: temp/memory_20250609_003740_4_ideas_idea_Build_an_AI_assistant_th.txt -> /home/trinityai/memory/categories/ideas/memory_20250609_003740_4_ideas_idea_Build_an_AI_assistant_th.txt
+2025-06-09 00:37:41,388 - trinity - INFO - Saved to NAS: /home/trinityai/memory/categories/ideas/memory_20250609_003740_4_ideas_idea_Build_an_AI_assistant_th.txt
+2025-06-09 00:37:46,811 - trinity - INFO - Uploaded file to Google Drive: memory_20250609_003740_4_ideas_idea_Build_an_AI_assistant_th.txt
+2025-06-09 00:37:46,812 - trinity - INFO - Saved to Google Drive: 1kkvXhcC158Gn5HG5PbZ0PIQTaCTHnMMO
+2025-06-09 00:37:46,824 - trinity - INFO - Memory saved with ID: 61
+2025-06-09 00:37:46,825 - trinity - INFO - File archived (processed): data/manual_input\idea_note.txt -> data/archive/processed\20250609_003746_idea_note.txt
+2025-06-09 00:37:46,825 - trinity - INFO - Successfully processed file: data/manual_input\idea_note.txt -> Memory ID: 61
+2025-06-09 00:40:00,663 - trinity - INFO - Status - Processed: 1, Failed: 0
+2025-06-09 00:45:00,791 - trinity - INFO - Status - Processed: 1, Failed: 0
+2025-06-09 00:47:53,839 - trinity - INFO - New file detected: data/inbox\test_memory.txt
+2025-06-09 00:47:53,840 - trinity - INFO - Processing file: data/inbox\test_memory.txt
+2025-06-09 00:47:55,845 - trinity - WARNING - Empty file ignored: data/inbox\test_memory.txt
+2025-06-09 00:47:55,847 - trinity - INFO - File archived (empty): data/inbox\test_memory.txt -> data/archive/empty\20250609_004755_test_memory.txt
+2025-06-09 00:47:57,322 - trinity - INFO - New file detected: data/inbox\test_memory.txt
+2025-06-09 00:47:57,323 - trinity - INFO - Processing file: data/inbox\test_memory.txt
+2025-06-09 00:47:59,329 - trinity - INFO - Parsed command: save - tasks - 3 tags
+2025-06-09 00:47:59,330 - trinity - INFO - Parsed command - Action: save, Category: tasks
+2025-06-09 00:48:00,386 - trinity - INFO - Uploaded file: temp/memory_20250609_004759_3_tasks_I_need_to_remember_to_buy_groc.txt -> /home/trinityai/memory/categories/tasks/memory_20250609_004759_3_tasks_I_need_to_remember_to_buy_groc.txt
+2025-06-09 00:48:00,386 - trinity - INFO - Saved to NAS: /home/trinityai/memory/categories/tasks/memory_20250609_004759_3_tasks_I_need_to_remember_to_buy_groc.txt
+2025-06-09 00:48:04,438 - trinity - INFO - Uploaded file to Google Drive: memory_20250609_004759_3_tasks_I_need_to_remember_to_buy_groc.txt
+2025-06-09 00:48:04,439 - trinity - INFO - Saved to Google Drive: 1KTAxhZydp2pOCVeR3vtjsMrkm8nlwxFR
+2025-06-09 00:48:04,444 - trinity - INFO - Memory saved with ID: 62
+2025-06-09 00:48:04,445 - trinity - INFO - File archived (processed): data/inbox\test_memory.txt -> data/archive/processed\20250609_004804_test_memory.txt
+2025-06-09 00:48:04,446 - trinity - INFO - Successfully processed file: data/inbox\test_memory.txt -> Memory ID: 62
+2025-06-09 00:49:05,955 - trinity - INFO - New file detected: data/inbox\test_memory.txt
+2025-06-09 00:49:05,957 - trinity - INFO - Processing file: data/inbox\test_memory.txt
+2025-06-09 00:49:07,978 - trinity - INFO - Parsed command: save - tasks - 3 tags
+2025-06-09 00:49:07,979 - trinity - INFO - Parsed command - Action: save, Category: tasks
+2025-06-09 00:49:08,878 - trinity - INFO - Uploaded file: temp/memory_20250609_004907_9_tasks_I_need_to_remember_to_buy_groc.txt -> /home/trinityai/memory/categories/tasks/memory_20250609_004907_9_tasks_I_need_to_remember_to_buy_groc.txt
+2025-06-09 00:49:08,879 - trinity - INFO - Saved to NAS: /home/trinityai/memory/categories/tasks/memory_20250609_004907_9_tasks_I_need_to_remember_to_buy_groc.txt
+2025-06-09 00:49:11,404 - trinity - INFO - Uploaded file to Google Drive: memory_20250609_004907_9_tasks_I_need_to_remember_to_buy_groc.txt
+2025-06-09 00:49:11,405 - trinity - INFO - Saved to Google Drive: 1LHfEicmO5zuM73hAYR9fXDBqRGP5qTuS
+2025-06-09 00:49:11,411 - trinity - INFO - Memory saved with ID: 63
+2025-06-09 00:49:11,411 - trinity - INFO - File archived (processed): data/inbox\test_memory.txt -> data/archive/processed\20250609_004911_test_memory.txt
+2025-06-09 00:49:11,412 - trinity - INFO - Successfully processed file: data/inbox\test_memory.txt -> Memory ID: 63
+2025-06-09 00:50:00,939 - trinity - INFO - Status - Processed: 3, Failed: 0
+2025-06-09 00:55:00,090 - trinity - INFO - Status - Processed: 3, Failed: 0
+2025-06-09 00:55:34,391 - trinity - INFO - Received shutdown signal
+2025-06-09 00:55:42,607 - trinity - INFO - Successfully connected to NAS
+2025-06-09 00:55:44,084 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 00:55:47,000 - trinity - INFO - Successfully connected to NAS
+2025-06-09 00:55:47,005 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 00:55:47,008 - trinity - INFO - Watching directory: data/inbox
+2025-06-09 00:55:47,009 - trinity - INFO - Watching directory: data/manual_input
+2025-06-09 00:55:47,023 - trinity - INFO - Starting Trinity Memory System...
+2025-06-09 00:55:47,024 - trinity - INFO - Memory listener started in background
+2025-06-09 00:55:47,026 - trinity - INFO - API server started at http://localhost:5000
+2025-06-09 00:55:47,032 - trinity - INFO - Trinity Memory System is running!
+2025-06-09 00:55:47,032 - trinity - INFO - Watching directories: ['data/inbox', 'data/manual_input']
+2025-06-09 00:55:47,033 - trinity - INFO - API available at: http://localhost:5000
+2025-06-09 00:55:47,033 - trinity - INFO - Drop files in watch directories to create memories
+2025-06-09 00:55:47,033 - trinity - INFO - Press Ctrl+C to stop
+2025-06-09 00:55:49,934 - trinity - INFO - Successfully connected to NAS
+2025-06-09 00:55:49,936 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 00:55:49,938 - trinity - INFO - Watching directory: data/inbox
+2025-06-09 00:55:49,938 - trinity - INFO - Watching directory: data/manual_input
+2025-06-09 00:55:49,938 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-09 00:55:49,938 - trinity - INFO - Started watching: data/inbox
+2025-06-09 00:55:49,938 - trinity - INFO - Started watching: data/manual_input
+2025-06-09 00:55:49,939 - trinity - INFO - Memory listener started successfully
+2025-06-09 00:55:49,939 - trinity - INFO - Watching 2 directories:
+2025-06-09 00:55:49,939 - trinity - INFO -    - D:\My Data\Trinity\data\inbox
+2025-06-09 00:55:49,939 - trinity - INFO -    - D:\My Data\Trinity\data\manual_input
+2025-06-09 00:55:49,939 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-09 00:55:49,940 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-09 00:56:05,389 - trinity - INFO - Starting Trinity Memory System API
+2025-06-09 00:56:06,851 - trinity - INFO - Create folder response for agents: {'data': {'folders': [{'isdir': True, 'name': 'agents', 'path': '/home/trinityai/memory/agents'}]}, 'success': True}
+2025-06-09 00:56:07,758 - trinity - INFO - Create folder response for agents/freelance: {'data': {'folders': [{'isdir': True, 'name': 'agents/freelance', 'path': '/home/trinityai/memory/agents/freelance'}]}, 'success': True}
+2025-06-09 00:56:08,627 - trinity - INFO - Create folder response for agents/personal: {'data': {'folders': [{'isdir': True, 'name': 'agents/personal', 'path': '/home/trinityai/memory/agents/personal'}]}, 'success': True}
+2025-06-09 00:56:09,465 - trinity - INFO - Create folder response for categories: {'data': {'folders': [{'isdir': True, 'name': 'categories', 'path': '/home/trinityai/memory/categories'}]}, 'success': True}
+2025-06-09 00:56:10,376 - trinity - INFO - Create folder response for categories/health: {'data': {'folders': [{'isdir': True, 'name': 'categories/health', 'path': '/home/trinityai/memory/categories/health'}]}, 'success': True}
+2025-06-09 00:56:11,348 - trinity - INFO - Create folder response for categories/finance: {'data': {'folders': [{'isdir': True, 'name': 'categories/finance', 'path': '/home/trinityai/memory/categories/finance'}]}, 'success': True}
+2025-06-09 00:56:12,177 - trinity - INFO - Create folder response for categories/ideas: {'data': {'folders': [{'isdir': True, 'name': 'categories/ideas', 'path': '/home/trinityai/memory/categories/ideas'}]}, 'success': True}
+2025-06-09 00:56:13,105 - trinity - INFO - Create folder response for categories/tasks: {'data': {'folders': [{'isdir': True, 'name': 'categories/tasks', 'path': '/home/trinityai/memory/categories/tasks'}]}, 'success': True}
+2025-06-09 00:56:13,941 - trinity - INFO - Create folder response for categories/jobs: {'data': {'folders': [{'isdir': True, 'name': 'categories/jobs', 'path': '/home/trinityai/memory/categories/jobs'}]}, 'success': True}
+2025-06-09 00:56:14,785 - trinity - INFO - Create folder response for categories/test: {'data': {'folders': [{'isdir': True, 'name': 'categories/test', 'path': '/home/trinityai/memory/categories/test'}]}, 'success': True}
+2025-06-09 00:56:15,714 - trinity - INFO - Create folder response for logs: {'data': {'folders': [{'isdir': True, 'name': 'logs', 'path': '/home/trinityai/memory/logs'}]}, 'success': True}
+2025-06-09 00:56:16,589 - trinity - INFO - Create folder response for metadata: {'data': {'folders': [{'isdir': True, 'name': 'metadata', 'path': '/home/trinityai/memory/metadata'}]}, 'success': True}
+2025-06-09 00:56:17,516 - trinity - INFO - Create folder response for backups: {'data': {'folders': [{'isdir': True, 'name': 'backups', 'path': '/home/trinityai/memory/backups'}]}, 'success': True}
+2025-06-09 00:56:18,351 - trinity - INFO - Create folder response for inbox: {'data': {'folders': [{'isdir': True, 'name': 'inbox', 'path': '/home/trinityai/memory/inbox'}]}, 'success': True}
+2025-06-09 00:56:20,351 - trinity - INFO - Created Google Drive folder: trinity_memory
+2025-06-09 00:56:20,351 - trinity - INFO - Created main Trinity folder: 1ojkVAI28SqcQggQ9twTyJ5tVeDBQUKcp
+2025-06-09 00:56:21,367 - trinity - INFO - Created Google Drive folder: agents
+2025-06-09 00:56:22,366 - trinity - INFO - Created Google Drive folder: freelance
+2025-06-09 00:56:23,365 - trinity - INFO - Created Google Drive folder: personal
+2025-06-09 00:56:24,362 - trinity - INFO - Created Google Drive folder: categories
+2025-06-09 00:56:25,367 - trinity - INFO - Created Google Drive folder: health
+2025-06-09 00:56:26,368 - trinity - INFO - Created Google Drive folder: finance
+2025-06-09 00:56:27,366 - trinity - INFO - Created Google Drive folder: ideas
+2025-06-09 00:56:28,322 - trinity - INFO - Created Google Drive folder: tasks
+2025-06-09 00:56:29,382 - trinity - INFO - Created Google Drive folder: jobs
+2025-06-09 00:56:30,540 - trinity - INFO - Created Google Drive folder: logs
+2025-06-09 00:56:31,756 - trinity - INFO - Created Google Drive folder: metadata
+2025-06-09 00:56:32,827 - trinity - INFO - Created Google Drive folder: backups
+2025-06-09 00:56:32,828 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-09 00:59:33,255 - trinity - INFO - Received shutdown signal
+2025-06-09 00:59:40,356 - trinity - INFO - Successfully connected to NAS
+2025-06-09 00:59:40,360 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 00:59:43,804 - trinity - INFO - Successfully connected to NAS
+2025-06-09 00:59:43,806 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 00:59:43,808 - trinity - INFO - Watching directory: data/inbox
+2025-06-09 00:59:43,808 - trinity - INFO - Watching directory: data/manual_input
+2025-06-09 00:59:43,816 - trinity - INFO - Starting Trinity Memory System...
+2025-06-09 00:59:43,817 - trinity - INFO - Memory listener started in background
+2025-06-09 00:59:43,819 - trinity - INFO - API server started at http://localhost:5000
+2025-06-09 00:59:43,821 - trinity - INFO - Trinity Memory System is running!
+2025-06-09 00:59:43,821 - trinity - INFO - Watching directories: ['data/inbox', 'data/manual_input']
+2025-06-09 00:59:43,821 - trinity - INFO - API available at: http://localhost:5000
+2025-06-09 00:59:43,821 - trinity - INFO - Drop files in watch directories to create memories
+2025-06-09 00:59:43,822 - trinity - INFO - Press Ctrl+C to stop
+2025-06-09 00:59:46,581 - trinity - INFO - Successfully connected to NAS
+2025-06-09 00:59:46,583 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 00:59:46,585 - trinity - INFO - Watching directory: data/inbox
+2025-06-09 00:59:46,585 - trinity - INFO - Watching directory: data/manual_input
+2025-06-09 00:59:46,586 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-09 00:59:46,586 - trinity - INFO - Started watching: data/inbox
+2025-06-09 00:59:46,586 - trinity - INFO - Started watching: data/manual_input
+2025-06-09 00:59:46,587 - trinity - INFO - Memory listener started successfully
+2025-06-09 00:59:46,587 - trinity - INFO - Watching 2 directories:
+2025-06-09 00:59:46,587 - trinity - INFO -    - D:\My Data\Trinity\data\inbox
+2025-06-09 00:59:46,587 - trinity - INFO -    - D:\My Data\Trinity\data\manual_input
+2025-06-09 00:59:46,588 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-09 00:59:46,588 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-09 00:59:49,774 - trinity - INFO - Starting Trinity Memory System API
+2025-06-09 00:59:50,612 - trinity - INFO - Create folder response for agents: {'data': {'folders': [{'isdir': True, 'name': 'agents', 'path': '/home/trinityai/memory/agents'}]}, 'success': True}
+2025-06-09 00:59:51,444 - trinity - INFO - Create folder response for agents/freelance: {'data': {'folders': [{'isdir': True, 'name': 'agents/freelance', 'path': '/home/trinityai/memory/agents/freelance'}]}, 'success': True}
+2025-06-09 00:59:52,380 - trinity - INFO - Create folder response for agents/personal: {'data': {'folders': [{'isdir': True, 'name': 'agents/personal', 'path': '/home/trinityai/memory/agents/personal'}]}, 'success': True}
+2025-06-09 00:59:53,205 - trinity - INFO - Create folder response for categories: {'data': {'folders': [{'isdir': True, 'name': 'categories', 'path': '/home/trinityai/memory/categories'}]}, 'success': True}
+2025-06-09 00:59:54,102 - trinity - INFO - Create folder response for categories/health: {'data': {'folders': [{'isdir': True, 'name': 'categories/health', 'path': '/home/trinityai/memory/categories/health'}]}, 'success': True}
+2025-06-09 00:59:55,010 - trinity - INFO - Create folder response for categories/finance: {'data': {'folders': [{'isdir': True, 'name': 'categories/finance', 'path': '/home/trinityai/memory/categories/finance'}]}, 'success': True}
+2025-06-09 00:59:55,840 - trinity - INFO - Create folder response for categories/ideas: {'data': {'folders': [{'isdir': True, 'name': 'categories/ideas', 'path': '/home/trinityai/memory/categories/ideas'}]}, 'success': True}
+2025-06-09 00:59:56,700 - trinity - INFO - Create folder response for categories/tasks: {'data': {'folders': [{'isdir': True, 'name': 'categories/tasks', 'path': '/home/trinityai/memory/categories/tasks'}]}, 'success': True}
+2025-06-09 00:59:57,543 - trinity - INFO - Create folder response for categories/jobs: {'data': {'folders': [{'isdir': True, 'name': 'categories/jobs', 'path': '/home/trinityai/memory/categories/jobs'}]}, 'success': True}
+2025-06-09 00:59:58,381 - trinity - INFO - Create folder response for categories/test: {'data': {'folders': [{'isdir': True, 'name': 'categories/test', 'path': '/home/trinityai/memory/categories/test'}]}, 'success': True}
+2025-06-09 00:59:59,282 - trinity - INFO - Create folder response for logs: {'data': {'folders': [{'isdir': True, 'name': 'logs', 'path': '/home/trinityai/memory/logs'}]}, 'success': True}
+2025-06-09 01:00:00,126 - trinity - INFO - Create folder response for metadata: {'data': {'folders': [{'isdir': True, 'name': 'metadata', 'path': '/home/trinityai/memory/metadata'}]}, 'success': True}
+2025-06-09 01:00:00,594 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 01:00:01,052 - trinity - INFO - Create folder response for backups: {'data': {'folders': [{'isdir': True, 'name': 'backups', 'path': '/home/trinityai/memory/backups'}]}, 'success': True}
+2025-06-09 01:00:01,883 - trinity - INFO - Create folder response for inbox: {'data': {'folders': [{'isdir': True, 'name': 'inbox', 'path': '/home/trinityai/memory/inbox'}]}, 'success': True}
+2025-06-09 01:00:03,940 - trinity - INFO - Created Google Drive folder: trinity_memory
+2025-06-09 01:00:03,940 - trinity - INFO - Created main Trinity folder: 10Rubfk8jGpr0HXk5hC8EYHwiNgyJUZJt
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/agents
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/agents/freelance
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/agents/personal
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/categories
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/categories/health
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/categories/finance
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/categories/ideas
+2025-06-09 01:00:03,941 - trinity - INFO - Ensured folder: trinity_memory/categories/tasks
+2025-06-09 01:00:03,942 - trinity - INFO - Ensured folder: trinity_memory/categories/jobs
+2025-06-09 01:00:03,942 - trinity - INFO - Ensured folder: trinity_memory/logs
+2025-06-09 01:00:03,942 - trinity - INFO - Ensured folder: trinity_memory/metadata
+2025-06-09 01:00:03,942 - trinity - INFO - Ensured folder: trinity_memory/backups
+2025-06-09 01:00:03,942 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-09 01:02:08,787 - trinity - INFO - Starting Trinity Memory System API
+2025-06-09 01:02:10,235 - trinity - INFO - Create folder response for agents: {'data': {'folders': [{'isdir': True, 'name': 'agents', 'path': '/home/trinityai/memory/agents'}]}, 'success': True}
+2025-06-09 01:02:11,083 - trinity - INFO - Create folder response for agents/freelance: {'data': {'folders': [{'isdir': True, 'name': 'agents/freelance', 'path': '/home/trinityai/memory/agents/freelance'}]}, 'success': True}
+2025-06-09 01:02:12,668 - trinity - INFO - Create folder response for agents/personal: {'data': {'folders': [{'isdir': True, 'name': 'agents/personal', 'path': '/home/trinityai/memory/agents/personal'}]}, 'success': True}
+2025-06-09 01:02:13,543 - trinity - INFO - Create folder response for categories: {'data': {'folders': [{'isdir': True, 'name': 'categories', 'path': '/home/trinityai/memory/categories'}]}, 'success': True}
+2025-06-09 01:02:14,467 - trinity - INFO - Create folder response for categories/health: {'data': {'folders': [{'isdir': True, 'name': 'categories/health', 'path': '/home/trinityai/memory/categories/health'}]}, 'success': True}
+2025-06-09 01:02:15,291 - trinity - INFO - Create folder response for categories/finance: {'data': {'folders': [{'isdir': True, 'name': 'categories/finance', 'path': '/home/trinityai/memory/categories/finance'}]}, 'success': True}
+2025-06-09 01:02:16,121 - trinity - INFO - Create folder response for categories/ideas: {'data': {'folders': [{'isdir': True, 'name': 'categories/ideas', 'path': '/home/trinityai/memory/categories/ideas'}]}, 'success': True}
+2025-06-09 01:02:16,977 - trinity - INFO - Create folder response for categories/tasks: {'data': {'folders': [{'isdir': True, 'name': 'categories/tasks', 'path': '/home/trinityai/memory/categories/tasks'}]}, 'success': True}
+2025-06-09 01:02:17,827 - trinity - INFO - Create folder response for categories/jobs: {'data': {'folders': [{'isdir': True, 'name': 'categories/jobs', 'path': '/home/trinityai/memory/categories/jobs'}]}, 'success': True}
+2025-06-09 01:02:18,746 - trinity - INFO - Create folder response for categories/test: {'data': {'folders': [{'isdir': True, 'name': 'categories/test', 'path': '/home/trinityai/memory/categories/test'}]}, 'success': True}
+2025-06-09 01:02:19,669 - trinity - INFO - Create folder response for logs: {'data': {'folders': [{'isdir': True, 'name': 'logs', 'path': '/home/trinityai/memory/logs'}]}, 'success': True}
+2025-06-09 01:02:20,591 - trinity - INFO - Create folder response for metadata: {'data': {'folders': [{'isdir': True, 'name': 'metadata', 'path': '/home/trinityai/memory/metadata'}]}, 'success': True}
+2025-06-09 01:02:21,507 - trinity - INFO - Create folder response for backups: {'data': {'folders': [{'isdir': True, 'name': 'backups', 'path': '/home/trinityai/memory/backups'}]}, 'success': True}
+2025-06-09 01:02:22,354 - trinity - INFO - Create folder response for inbox: {'data': {'folders': [{'isdir': True, 'name': 'inbox', 'path': '/home/trinityai/memory/inbox'}]}, 'success': True}
+2025-06-09 01:02:22,354 - trinity - INFO - Ensured folder: trinity_memory
+2025-06-09 01:02:22,354 - trinity - INFO - Ensured folder: trinity_memory/agents
+2025-06-09 01:02:22,354 - trinity - INFO - Ensured folder: trinity_memory/agents/freelance
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/agents/personal
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/categories
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/categories/health
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/categories/finance
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/categories/ideas
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/categories/tasks
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/categories/jobs
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/logs
+2025-06-09 01:02:22,355 - trinity - INFO - Ensured folder: trinity_memory/metadata
+2025-06-09 01:02:22,356 - trinity - INFO - Ensured folder: trinity_memory/backups
+2025-06-09 01:02:22,356 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-09 01:05:00,795 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 01:06:36,242 - trinity - INFO - Starting Trinity Memory System API
+2025-06-09 01:06:37,867 - trinity - INFO - Create folder response for agents: {'data': {'folders': [{'isdir': True, 'name': 'agents', 'path': '/home/trinityai/memory/agents'}]}, 'success': True}
+2025-06-09 01:06:38,792 - trinity - INFO - Create folder response for agents/freelance: {'data': {'folders': [{'isdir': True, 'name': 'agents/freelance', 'path': '/home/trinityai/memory/agents/freelance'}]}, 'success': True}
+2025-06-09 01:06:39,734 - trinity - INFO - Create folder response for agents/personal: {'data': {'folders': [{'isdir': True, 'name': 'agents/personal', 'path': '/home/trinityai/memory/agents/personal'}]}, 'success': True}
+2025-06-09 01:06:41,092 - trinity - INFO - Create folder response for categories: {'data': {'folders': [{'isdir': True, 'name': 'categories', 'path': '/home/trinityai/memory/categories'}]}, 'success': True}
+2025-06-09 01:06:42,027 - trinity - INFO - Create folder response for categories/health: {'data': {'folders': [{'isdir': True, 'name': 'categories/health', 'path': '/home/trinityai/memory/categories/health'}]}, 'success': True}
+2025-06-09 01:06:43,411 - trinity - INFO - Create folder response for categories/finance: {'data': {'folders': [{'isdir': True, 'name': 'categories/finance', 'path': '/home/trinityai/memory/categories/finance'}]}, 'success': True}
+2025-06-09 01:06:44,335 - trinity - INFO - Create folder response for categories/ideas: {'data': {'folders': [{'isdir': True, 'name': 'categories/ideas', 'path': '/home/trinityai/memory/categories/ideas'}]}, 'success': True}
+2025-06-09 01:06:45,281 - trinity - INFO - Create folder response for categories/tasks: {'data': {'folders': [{'isdir': True, 'name': 'categories/tasks', 'path': '/home/trinityai/memory/categories/tasks'}]}, 'success': True}
+2025-06-09 01:06:46,226 - trinity - INFO - Create folder response for categories/jobs: {'data': {'folders': [{'isdir': True, 'name': 'categories/jobs', 'path': '/home/trinityai/memory/categories/jobs'}]}, 'success': True}
+2025-06-09 01:06:47,063 - trinity - INFO - Create folder response for categories/test: {'data': {'folders': [{'isdir': True, 'name': 'categories/test', 'path': '/home/trinityai/memory/categories/test'}]}, 'success': True}
+2025-06-09 01:06:47,933 - trinity - INFO - Create folder response for logs: {'data': {'folders': [{'isdir': True, 'name': 'logs', 'path': '/home/trinityai/memory/logs'}]}, 'success': True}
+2025-06-09 01:06:48,787 - trinity - INFO - Create folder response for metadata: {'data': {'folders': [{'isdir': True, 'name': 'metadata', 'path': '/home/trinityai/memory/metadata'}]}, 'success': True}
+2025-06-09 01:06:49,695 - trinity - INFO - Create folder response for backups: {'data': {'folders': [{'isdir': True, 'name': 'backups', 'path': '/home/trinityai/memory/backups'}]}, 'success': True}
+2025-06-09 01:06:50,590 - trinity - INFO - Create folder response for inbox: {'data': {'folders': [{'isdir': True, 'name': 'inbox', 'path': '/home/trinityai/memory/inbox'}]}, 'success': True}
+2025-06-09 01:06:50,591 - trinity - INFO - Ensured folder: trinity_memory
+2025-06-09 01:06:50,591 - trinity - INFO - Ensured folder: trinity_memory/agents
+2025-06-09 01:06:50,591 - trinity - INFO - Ensured folder: trinity_memory/agents/freelance
+2025-06-09 01:06:50,591 - trinity - INFO - Ensured folder: trinity_memory/agents/personal
+2025-06-09 01:06:50,591 - trinity - INFO - Ensured folder: trinity_memory/categories
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/categories/health
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/categories/finance
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/categories/ideas
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/categories/tasks
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/categories/jobs
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/logs
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/metadata
+2025-06-09 01:06:50,592 - trinity - INFO - Ensured folder: trinity_memory/backups
+2025-06-09 01:06:50,592 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-09 01:10:00,979 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-09 01:10:42,295 - trinity - INFO - Received shutdown signal
+2025-06-09 01:10:48,081 - trinity - INFO - Successfully connected to NAS
+2025-06-09 01:10:48,086 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 01:10:50,877 - trinity - INFO - Successfully connected to NAS
+2025-06-09 01:10:50,881 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-09 01:10:50,885 - trinity - INFO - Watching directory: data/inbox
+2025-06-09 01:10:50,886 - trinity - INFO - Watching directory: data/manual_input
+2025-06-09 01:10:50,898 - trinity - INFO - Starting Trinity Memory System...
+2025-06-09 01:10:50,899 - trinity - INFO - Memory listener started in background
+2025-06-09 01:10:50,901 - trinity - INFO - API server started at http://localhost:5000
+2025-06-09 01:10:50,903 - trinity - INFO - Trinity Memory System is running!
+2025-06-09 01:10:50,903 - trinity - INFO - Watching directories: ['data/inbox', 'data/manual_input']
+2025-06-09 01:10:50,903 - trinity - INFO - API available at: http://localhost:5000
+2025-06-09 01:10:50,903 - trinity - INFO - Drop files in watch directories to create memories
+2025-06-09 01:10:50,904 - trinity - INFO - Press Ctrl+C to stop
