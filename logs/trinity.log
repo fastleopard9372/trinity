@@ -479,3 +479,64 @@
 2025-06-08 15:25:45,507 - trinity - INFO - API available at: http://localhost:5000
 2025-06-08 15:25:45,508 - trinity - INFO - Drop files in watch directories to create memories
 2025-06-08 15:25:45,508 - trinity - INFO - Press Ctrl+C to stop
+2025-06-08 15:25:48,041 - trinity - INFO - Successfully connected to NAS
+2025-06-08 15:25:48,043 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-08 15:25:48,045 - trinity - INFO - Watching directory: data/inbox
+2025-06-08 15:25:48,045 - trinity - INFO - Watching directory: data/manual_input
+2025-06-08 15:25:48,045 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-08 15:25:48,045 - trinity - INFO - Started watching: data/inbox
+2025-06-08 15:25:48,046 - trinity - INFO - Started watching: data/manual_input
+2025-06-08 15:25:48,046 - trinity - INFO - Memory listener started successfully
+2025-06-08 15:25:48,046 - trinity - INFO - Watching 2 directories:
+2025-06-08 15:25:48,047 - trinity - INFO -    - D:\My Data\Trinity\data\inbox
+2025-06-08 15:25:48,047 - trinity - INFO -    - D:\My Data\Trinity\data\manual_input
+2025-06-08 15:25:48,047 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-08 15:25:48,047 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-08 15:25:49,952 - trinity - INFO - Starting Trinity Memory System API
+2025-06-08 15:25:49,953 - trinity - INFO - Created folder in NAS: /home/agents
+2025-06-08 15:25:49,953 - trinity - INFO - Created folder in NAS: /home/agents/freelance
+2025-06-08 15:25:49,953 - trinity - INFO - Created folder in NAS: /home/agents/personal
+2025-06-08 15:25:49,953 - trinity - INFO - Created folder in NAS: /home/categories
+2025-06-08 15:25:49,954 - trinity - INFO - Created folder in NAS: /home/categories/health
+2025-06-08 15:25:49,954 - trinity - INFO - Created folder in NAS: /home/categories/finance
+2025-06-08 15:25:49,954 - trinity - INFO - Created folder in NAS: /home/categories/ideas
+2025-06-08 15:25:49,954 - trinity - INFO - Created folder in NAS: /home/categories/tasks
+2025-06-08 15:25:49,955 - trinity - INFO - Created folder in NAS: /home/categories/jobs
+2025-06-08 15:25:49,955 - trinity - INFO - Created folder in NAS: /home/logs
+2025-06-08 15:25:49,955 - trinity - INFO - Created folder in NAS: /home/metadata
+2025-06-08 15:25:49,955 - trinity - INFO - Created folder in NAS: /home/backups
+2025-06-08 15:25:49,955 - trinity - INFO - Created folder in NAS: /home/inbox
+2025-06-08 15:25:51,632 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "accessNotConfigured"
+2025-06-08 15:25:51,632 - trinity - ERROR - Failed to create folder trinity_memory: <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files?fields=id%2Cname&alt=json returned "Google Drive API has not been used in project 156298542458 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=156298542458 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Drive API has not been used in project 156298542458 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=156298542458 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2025-06-08 15:25:51,633 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-08 15:30:00,161 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-08 15:32:41,359 - trinity - INFO - Starting Trinity Memory System API
+2025-06-08 15:32:41,360 - trinity - INFO - Created folder in NAS: /home/agents
+2025-06-08 15:32:41,360 - trinity - INFO - Created folder in NAS: /home/agents/freelance
+2025-06-08 15:32:41,360 - trinity - INFO - Created folder in NAS: /home/agents/personal
+2025-06-08 15:32:41,360 - trinity - INFO - Created folder in NAS: /home/categories
+2025-06-08 15:32:41,360 - trinity - INFO - Created folder in NAS: /home/categories/health
+2025-06-08 15:32:41,361 - trinity - INFO - Created folder in NAS: /home/categories/finance
+2025-06-08 15:32:41,361 - trinity - INFO - Created folder in NAS: /home/categories/ideas
+2025-06-08 15:32:41,361 - trinity - INFO - Created folder in NAS: /home/categories/tasks
+2025-06-08 15:32:41,361 - trinity - INFO - Created folder in NAS: /home/categories/jobs
+2025-06-08 15:32:41,361 - trinity - INFO - Created folder in NAS: /home/logs
+2025-06-08 15:32:41,362 - trinity - INFO - Created folder in NAS: /home/metadata
+2025-06-08 15:32:41,362 - trinity - INFO - Created folder in NAS: /home/backups
+2025-06-08 15:32:41,363 - trinity - INFO - Created folder in NAS: /home/inbox
+2025-06-08 15:32:43,334 - trinity - INFO - Created Google Drive folder: trinity_memory
+2025-06-08 15:32:43,335 - trinity - INFO - Created main Trinity folder: 13xWv9eYmNgZgdxnHrhuO2bb-JMF7OiaT
+2025-06-08 15:32:44,293 - trinity - INFO - Created Google Drive folder: agents
+2025-06-08 15:32:45,259 - trinity - INFO - Created Google Drive folder: freelance
+2025-06-08 15:32:46,223 - trinity - INFO - Created Google Drive folder: personal
+2025-06-08 15:32:47,214 - trinity - INFO - Created Google Drive folder: categories
+2025-06-08 15:32:48,227 - trinity - INFO - Created Google Drive folder: health
+2025-06-08 15:32:49,171 - trinity - INFO - Created Google Drive folder: finance
+2025-06-08 15:32:50,076 - trinity - INFO - Created Google Drive folder: ideas
+2025-06-08 15:32:51,059 - trinity - INFO - Created Google Drive folder: tasks
+2025-06-08 15:32:52,043 - trinity - INFO - Created Google Drive folder: jobs
+2025-06-08 15:32:52,954 - trinity - INFO - Created Google Drive folder: logs
+2025-06-08 15:32:53,973 - trinity - INFO - Created Google Drive folder: metadata
+2025-06-08 15:32:55,020 - trinity - INFO - Created Google Drive folder: backups
+2025-06-08 15:32:55,020 - trinity - INFO - Trinity Memory System API started successfully
+2025-06-08 15:35:00,327 - trinity - INFO - Status - Processed: 0, Failed: 0

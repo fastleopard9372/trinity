@@ -3,3 +3,4 @@ venv
 credentials
 data
 log
+log/trinity.log
