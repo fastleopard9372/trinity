@@ -1,0 +1,255 @@
+trinity_memory_system/
+├── README.md
+├── requirements.txt
+├── .env.example
+├── .env
+├── .gitignore
+├── setup.py
+├── docker-compose.yml
+├── Dockerfile
+│
+├── api/
+│   ├── __init__.py
+│   ├── main.py                     # Enhanced FastAPI app with all endpoints
+│   ├── dependencies.py            # API dependencies and middleware
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── memory.py              # Memory-related endpoints
+│   │   ├── freelance.py           # Freelance agent endpoints
+│   │   ├── query.py               # Smart query endpoints
+│   │   └── system.py              # System health and management
+│   └── schemas/
+│       ├── __init__.py
+│       ├── memory.py              # Pydantic models for memory
+│       ├── freelance.py           # Pydantic models for freelance
+│       └── query.py               # Pydantic models for queries
+│
+├── clients/
+│   ├── __init__.py
+│   ├── nas_client.py              # Synology NAS integration
+│   ├── gdrive_client.py           # Google Drive integration
+│   └── openai_client.py           # OpenAI API wrapper
+│
+├── config/
+│   ├── __init__.py
+│   ├── settings.py                # Enhanced settings with new configs
+│   ├── database.py                # Database configuration
+│   └── logging.py                 # Logging configuration
+│
+├── core/
+│   ├── __init__.py
+│   ├── command_parser.py          # Memory command parsing
+│   ├── memory_listener.py         # File watcher and processing
+│   ├── smart_summarizer.py        # AI-powered summarization
+│   ├── freelance_agent.py         # Complete freelance agent system
+│   ├── query_engine.py            # Natural language query processing
+│   └── workflow_manager.py        # n8n workflow management
+│
+├── models/
+│   ├── __init__.py
+│   ├── memory.py                  # Enhanced database models with FTS
+│   ├── freelance.py               # Freelance job and proposal models
+│   └── user.py                    # User and session models
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py                  # Enhanced logging utilities
+│   ├── file_utils.py              # File manipulation utilities
+│   ├── date_parser.py             # Natural language date parsing
+│   ├── text_processor.py          # Text processing utilities
+│   └── validators.py              # Input validation utilities
+│
+├── scripts/
+│   ├── __init__.py
+│   ├── run_system.py              # Main system runner
+│   ├── setup_system.py            # System initialization
+│   ├── test_system.py             # System testing
+│   ├── backup_system.py           # Backup and restore
+│   ├── migrate_database.py        # Database migrations
+│   └── demo_data.py               # Create demo data
+│
+├── static/
+│   ├── css/
+│   │   ├── main.css               # Main stylesheet
+│   │   ├── dashboard.css          # Dashboard styles
+│   │   └── proposal-review.css    # Proposal review styles
+│   ├── js/
+│   │   ├── main.js                # Main JavaScript
+│   │   ├── dashboard.js           # Dashboard functionality
+│   │   ├── proposal-review.js     # Proposal review interface
+│   │   └── utils.js               # JavaScript utilities
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── icons/
+│   │   └── screenshots/
+│   └── templates/
+│       ├── index.html             # Main dashboard
+│       ├── proposal-review.html   # Proposal review interface
+│       ├── memory-search.html     # Memory search interface
+│       ├── analytics.html         # Analytics dashboard
+│       └── system-status.html     # System health monitor
+│
+├── templates/
+│   ├── proposals/
+│   │   ├── base_template.txt      # Base proposal template
+│   │   ├── technical_template.txt # Technical project template
+│   │   ├── creative_template.txt  # Creative project template
+│   │   └── data_template.txt      # Data analysis template
+│   ├── emails/
+│   │   ├── notification.html      # Email notification template
+│   │   ├── weekly_report.html     # Weekly report template
+│   │   └── alert.html             # Alert email template
+│   └── prompts/
+│       ├── proposal_generation.txt # AI proposal prompts
+│       ├── summarization.txt       # AI summarization prompts
+│       └── job_analysis.txt        # Job analysis prompts
+│
+├── data/
+│   ├── trinity_memory.db          # Main SQLite database
+│   ├── inbox/                     # Input directory for new memories
+│   │   └── .gitkeep
+│   ├── manual_input/              # Manual input directory
+│   │   └── .gitkeep
+│   ├── archive/                   # Processed files archive
+│   │   ├── processed/
+│   │   ├── failed/
+│   │   ├── empty/
+│   │   └── no_content/
+│   ├── uploads/                   # File uploads
+│   │   └── .gitkeep
+│   ├── summaries/                 # Cached summaries
+│   │   └── .gitkeep
+│   ├── backups/                   # System backups
+│   │   ├── daily/
+│   │   ├── weekly/
+│   │   └── monthly/
+│   └── exports/                   # Data exports
+│       └── .gitkeep
+│
+├── logs/
+│   ├── trinity.log               # Main application log
+│   ├── api.log                   # API request logs
+│   ├── freelance.log             # Freelance agent logs
+│   ├── errors.log                # Error logs
+│   └── performance.log           # Performance metrics
+│
+├── temp/
+│   └── .gitkeep                  # Temporary files directory
+│
+├── credentials/
+│   ├── google_credentials.json   # Google API credentials
+│   ├── token.json               # Google OAuth token
+│   ├── openai_key.txt           # OpenAI API key (optional)
+│   └── .gitkeep
+│
+├── workflows/
+│   ├── n8n/
+│   │   ├── trinity_freelance.json      # Main freelance workflow
+│   │   ├── memory_processing.json      # Memory processing workflow
+│   │   ├── health_monitoring.json      # System health workflow
+│   │   └── backup_automation.json      # Backup automation workflow
+│   ├── zapier/
+│   │   └── trinity_integrations.json   # Zapier integrations
+│   └── docs/
+│       ├── workflow_setup.md           # Workflow setup guide
+│       └── automation_guide.md         # Automation documentation
+│
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py                     # Pytest configuration
+│   ├── test_memory/
+│   │   ├── __init__.py
+│   │   ├── test_database.py           # Database tests
+│   │   ├── test_parser.py             # Command parser tests
+│   │   ├── test_listener.py           # File listener tests
+│   │   └── test_queries.py            # Smart query tests
+│   ├── test_freelance/
+│   │   ├── __init__.py
+│   │   ├── test_agent.py              # Freelance agent tests
+│   │   ├── test_proposals.py          # Proposal generation tests
+│   │   ├── test_job_feed.py           # Job feed tests
+│   │   └── test_analysis.py           # Job analysis tests
+│   ├── test_api/
+│   │   ├── __init__.py
+│   │   ├── test_endpoints.py          # API endpoint tests
+│   │   ├── test_auth.py               # Authentication tests
+│   │   └── test_integration.py        # Integration tests
+│   └── test_utils/
+│       ├── __init__.py
+│       ├── test_helpers.py            # Test helper functions
+│       └── test_fixtures.py           # Test data fixtures
+│
+├── docs/
+│   ├── README.md                      # Main documentation
+│   ├── INSTALLATION.md               # Installation guide
+│   ├── API_REFERENCE.md              # API documentation
+│   ├── USER_GUIDE.md                 # User guide
+│   ├── DEVELOPER_GUIDE.md            # Developer documentation
+│   ├── TROUBLESHOOTING.md            # Troubleshooting guide
+│   ├── CHANGELOG.md                  # Version history
+│   ├── architecture/
+│   │   ├── system_overview.md        # System architecture
+│   │   ├── database_schema.md        # Database design
+│   │   ├── api_design.md             # API design patterns
+│   │   └── security.md               # Security considerations
+│   ├── milestones/
+│   │   ├── milestone1_memory.md      # Milestone 1 documentation
+│   │   ├── milestone2_queries.md     # Milestone 2 documentation
+│   │   └── milestone3_freelance.md   # Milestone 3 documentation
+│   └── examples/
+│       ├── api_examples.py           # API usage examples
+│       ├── query_examples.md         # Query examples
+│       └── integration_examples.py   # Integration examples
+│
+├── deployment/
+│   ├── docker/
+│   │   ├── Dockerfile.api            # API service dockerfile
+│   │   ├── Dockerfile.worker         # Worker service dockerfile
+│   │   └── docker-compose.prod.yml   # Production compose file
+│   ├── nginx/
+│   │   ├── nginx.conf               # Nginx configuration
+│   │   └── ssl/                     # SSL certificates
+│   ├── systemd/
+│   │   ├── trinity-api.service      # Systemd service for API
+│   │   ├── trinity-worker.service   # Systemd service for worker
+│   │   └── trinity-backup.timer     # Systemd timer for backups
+│   └── scripts/
+│       ├── deploy.sh                # Deployment script
+│       ├── update.sh                # Update script
+│       └── backup.sh                # Backup script
+│
+├── monitoring/
+│   ├── grafana/
+│   │   ├── dashboards/
+│   │   │   ├── system_health.json   # System health dashboard
+│   │   │   ├── freelance_metrics.json # Freelance metrics dashboard
+│   │   │   └── memory_usage.json    # Memory usage dashboard
+│   │   └── provisioning/
+│   │       ├── datasources.yml      # Data source configuration
+│   │       └── dashboards.yml       # Dashboard configuration
+│   ├── prometheus/
+│   │   ├── prometheus.yml           # Prometheus configuration
+│   │   └── rules/
+│   │       ├── trinity_alerts.yml   # Alert rules
+│   │       └── memory_alerts.yml    # Memory-specific alerts
+│   └── logs/
+│       ├── logrotate.conf           # Log rotation configuration
+│       └── rsyslog.conf             # System log configuration
+│
+└── examples/
+    ├── memory_examples/
+    │   ├── sample_memories.txt       # Sample memory entries
+    │   ├── command_examples.txt      # Command examples
+    │   └── query_examples.txt        # Query examples
+    ├── freelance_examples/
+    │   ├── mock_jobs.json           # Mock job data
+    │   ├── sample_proposals.txt      # Sample proposals
+    │   └── client_responses.txt      # Sample client responses
+    ├── integration_examples/
+    │   ├── slack_integration.py     # Slack integration example
+    │   ├── email_integration.py     # Email integration example
+    │   └── webhook_examples.py      # Webhook examples
+    └── notebooks/
+        ├── data_analysis.ipynb      # Jupyter notebook for analysis
+        ├── system_exploration.ipynb # System exploration notebook
+        └── performance_testing.ipynb # Performance testing notebook

@@ -1,0 +1,10 @@
+Notes from AI course lecture 5
+
+Topics covered:
+- Deep learning fundamentals
+- Neural network architectures
+- Backpropagation algorithm
+- Gradient descent optimization
+
+
+Key takeaway: Understanding the mathematical foundations is crucial for advanced AI development.

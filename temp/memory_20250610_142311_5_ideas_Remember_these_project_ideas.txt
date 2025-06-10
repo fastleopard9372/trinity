@@ -1,0 +1,9 @@
+Remember these project ideas:
+
+1. AI-powered personal assistant with memory
+2. Automated code review system using LLMs
+3. Smart document summarization tool
+4. Conversational data analysis interface
+
+
+These could be good portfolio projects to demonstrate AI capabilities.

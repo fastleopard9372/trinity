@@ -1,6 +1,6 @@
-
 import os
 import sys
+import subprocess
 from pathlib import Path
 
 # Add parent directory to path to import modules
@@ -104,6 +104,92 @@ The assistant should have persistent memory across sessions and be able to recal
             f.write(test_file["content"])
         logger.info(f"Created test file: {test_file['path']}")
 
+def check_dependencies():
+    """Check if required external services are available"""
+    print("🔍 Checking dependencies...")
+    from config.settings import settings
+    # Check Redis
+    try:
+        import redis
+        r = redis.Redis.from_url(settings.redis_url)
+        r.ping()
+        print("Redis connection successful")
+    except Exception as e:
+        print(f"Redis connection failed: {e}")
+        print("Install Redis: brew install redis (macOS) or apt install redis-server (Ubuntu)")
+    
+    # Check Pinecone
+    pinecone_key = settings.pinecone_api_key
+    if not pinecone_key:
+        print("PINECONE_API_KEY not set")
+        print("Get your API key from https://app.pinecone.io/")
+    else:
+        print("Pinecone API key configured")
+    
+    # Check OpenAI
+    openai_key = settings.openai_api_key
+    if not openai_key:
+        print("OPENAI_API_KEY not set")
+        print("Get your API key from https://platform.openai.com/api-keys")
+    else:
+        print("OpenAI API key configured")
+
+def setup_vector_database():
+    """Initialize Pinecone vector database"""
+    print("Setting up vector database...")
+    
+    try:
+        from pinecone import Pinecone
+        from config.settings import settings
+        
+        # Initialize Pinecone
+        pinecone = Pinecone(api_key=settings.pinecone_api_key)
+
+        # Create or connect to index
+        if settings.pinecone_index_name not in pinecone.list_indexes().names():
+            pinecone.create_index_for_model(
+                name=settings.pinecone_index_name,
+                cloud="aws",
+                region=settings.pinecone_environment,
+                embed={
+                    "model": "llama-text-embed-v2",
+                    "field_map": {"text": "chunk_text"}
+                }
+            )
+            print(f"Created Pinecone index: {settings.pinecone_index_name}")
+        else:
+            print(f"Pinecone index already exists: {settings.pinecone_index_name}")
+          
+    except Exception as e:
+        print(f"Vector database setup failed: {e}")
+
+
+def create_systemd_service():
+    """Create systemd service for production deployment"""
+    service_content = """
+[Unit]
+Description=Trinity Enhanced Memory System
+After=network.target
+
+[Service]
+Type=simple
+User=trinity
+WorkingDirectory=/opt/trinity
+Environment=PATH=/opt/trinity/venv/bin
+ExecStart=/opt/trinity/venv/bin/python scripts/run_enhanced_system.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+"""
+    
+    service_path = "/etc/systemd/system/trinity-memory.service"
+    print(f"Systemd service template created")
+    print(f"To install: sudo cp {service_path} /etc/systemd/system/")
+    print("Then: sudo systemctl enable trinity-memory && sudo systemctl start trinity-memory")
+
+
 def main():
     """Main setup function"""
     logger.info("Starting Trinity Memory System setup...")
@@ -132,6 +218,25 @@ def main():
         logger.warning("Google Drive setup failed - check your Google credentials")
         success = False
     
+     # Check dependencies
+    check_dependencies()
+    
+    # Setup vector database
+    setup_vector_database()
+    
+    # Create directories
+    directories = [
+        "data", "data/sessions", "data/inbox", "data/manual_input",
+        "data/archive", "logs", "temp", "credentials"
+    ]
+    
+    for directory in directories:
+        os.makedirs(directory, exist_ok=True)
+        print(f"Created directory: {directory}")
+    
+    # Create systemd service template
+    create_systemd_service()
+    
     # Create test files
     create_test_files()
     
@@ -140,6 +245,13 @@ def main():
         logger.info("You can now start the system with: python scripts/run_system.py")
     else:
         logger.info("Setup completed with some warnings. Check the logs above.")
+    
+    print("\nSetup complete!")
+    print("Next steps:")
+    print("1. Configure your .env file with API keys")
+    print("2. Start Redis: redis-server")
+    print("3. Run the system: python scripts/run_system.py")
+    print("4. Test the API: curl http://localhost:5000/api/health")
     
     return success
 
