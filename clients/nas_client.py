@@ -100,6 +100,12 @@ class NASClient:
         folder_path = f"{self.base_path}/categories/{category}"
         file_path = f"{folder_path}/{filename}"
         
+        try:
+            response = self.fs.create_folder(self.base_path, f"/categories/{category}")
+            # logger.info(f"Create folder response for {category}: {response}")
+        except Exception as e:
+            # logger.debug(f"Folder creation info for {category}: {e}")
+            None
         # Create temporary local file
         temp_path = f"temp/{filename}"
         os.makedirs("temp", exist_ok=True)

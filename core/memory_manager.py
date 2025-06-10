@@ -10,10 +10,10 @@ import sqlite3
 from pathlib import Path
 
 from pinecone import Pinecone
-from langchain_openai.embeddings import OpenAIEmbeddings
+
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_pinecone.vectorstores import PineconeVectorStore as LangchainPinecone
-from langchain_openai import OpenAI
+from langchain_pinecone import PineconeVectorStore
 from langchain.chains.summarize import load_summarize_chain
 from langchain.schema import Document
 
@@ -48,15 +48,8 @@ class VectorMemoryManager:
     def __init__(self):
         self.index_name = settings.pinecone_index_name
         self.embeddings = OpenAIEmbeddings(
-            openai_api_key=settings.openai_api_key,
-            # Add timeout and retry configurations
-            request_timeout=60,  # 60 second timeout
-            max_retries=3,
-            # Use httpx client with better connection settings
-            http_client=httpx.Client(
-                timeout=httpx.Timeout(60.0, connect=10.0),
-                limits=httpx.Limits(max_connections=10, max_keepalive_connections=5)
-            )
+            openai_api_key= settings.openai_api_key,
+            model="text-embedding-3-small"
         )
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
@@ -73,19 +66,19 @@ class VectorMemoryManager:
                 cloud="aws",
                 region=settings.pinecone_environment,
                 embed={
-                    "model": "llama-text-embed-v2",
+                    "model": "text-embedding-3-small",
                     "field_map": {"text": "chunk_text"}
                 }
             )
 
         self.index = self.pinecone.Index(self.index_name)
 
-        self.vectorstore = LangchainPinecone(
+        self.vectorstore = PineconeVectorStore(
             index=self.index,
             embedding=self.embeddings, 
             text_key="text"
         )
-    
+        
     async def store_conversation_entry(self, entry: ConversationEntry) -> bool:
         """Store a conversation entry in vector database"""
         try:
@@ -102,12 +95,8 @@ class VectorMemoryManager:
                     **entry.metadata
                 }
             )
-            # Store in vector database
-            await asyncio.to_thread(
-                self.vectorstore.add_documents,
-                [doc],
-                ids=[entry.id]
-            )
+            # docs = self.text_splitter.split_documents(doc)
+            await self.vectorstore.aadd_documents([doc], ids=[entry.id])
             
             logger.info(f"Stored conversation entry in vector DB: {entry.id}")
             return True
@@ -248,26 +237,25 @@ class SQLiteSessionManager:
     def get_session_entries(self, session_id: str, limit: int = 100) -> List[ConversationEntry]:
         """Get conversation entries for a session"""
         entries = []
+
+        self.conn.row_factory = sqlite3.Row
+        cursor = self.conn.execute("""
+            SELECT * FROM conversation_entries 
+            WHERE session_id = ? 
+            ORDER BY timestamp ASC 
+            LIMIT ?
+        """, (session_id, limit))
         
-        with sqlite3.connect(self.db_path) as conn:
-            conn.row_factory = sqlite3.Row
-            cursor = conn.execute("""
-                SELECT * FROM conversation_entries 
-                WHERE session_id = ? 
-                ORDER BY timestamp ASC 
-                LIMIT ?
-            """, (session_id, limit))
-            
-            for row in cursor:
-                entries.append(ConversationEntry(
-                    id=row['id'],
-                    session_id=row['session_id'],
-                    user_id=row['user_id'],
-                    content=row['content'],
-                    role=row['role'],
-                    timestamp=datetime.fromisoformat(row['timestamp']),
-                    metadata=json.loads(row['metadata'] or '{}')
-                ))
+        for row in cursor:
+            entries.append(ConversationEntry(
+                id=row['id'],
+                session_id=row['session_id'],
+                user_id=row['user_id'],
+                content=row['content'],
+                role=row['role'],
+                timestamp=datetime.fromisoformat(row['timestamp']),
+                metadata=json.loads(row['metadata'] or '{}')
+            ))
         
         return entries
     
@@ -301,7 +289,7 @@ class MemoryManager:
         self.db_manager = DatabaseManager(settings.memory_db_path)
         
         # LangChain for summarization
-        self.llm = OpenAI(openai_api_key=settings.openai_api_key, temperature=0.3)
+        self.llm = ChatOpenAI(openai_api_key=settings.openai_api_key, temperature=0.3)
         self.summarize_chain = load_summarize_chain(self.llm, chain_type="map_reduce")
         
         # Auto-save triggers
@@ -401,7 +389,6 @@ class MemoryManager:
             summary = await asyncio.to_thread(
                 self.summarize_chain.run, docs
             )
-            
             # Prepare session data
             session_data = {
                 "session_id": session_id,
@@ -422,11 +409,10 @@ class MemoryManager:
                     for entry in entries
                 ]
             }
-            
             # Save to NAS
             filename = f"session_{session_id}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
             nas_path = await self._save_session_data_to_nas(session_data, filename)
-            
+            logger.log("-----------------------save----------------------")
             # Save to database for indexing
             memory_data = {
                 "content": summary,
