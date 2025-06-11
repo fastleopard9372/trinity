@@ -7622,3 +7622,725 @@ HTTP response body: {"error":{"code":"ALREADY_EXISTS","message":"Resource  alrea
 2025-06-10 16:36:08,254 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_3b95d3dc95825923a2006c6736248425_20250610_163607.json'
 2025-06-10 16:36:08,254 - trinity - INFO - Added conversation message: entry_e86f7a96c72f826f1ff2e7ffc3790d9c
 2025-06-10 16:36:10,490 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:26,436 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:43:26,443 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:43:26,483 - trinity - INFO - Created session: session_6bbe3ac05e3565bfbaab9dfcd53d4f7f
+2025-06-10 16:43:26,943 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:27,823 - trinity - INFO - Stored conversation entry in vector DB: entry_80f0b6785836837d4a4a13018fd5c560
+2025-06-10 16:43:27,825 - trinity - INFO - Added conversation message: entry_80f0b6785836837d4a4a13018fd5c560
+2025-06-10 16:43:28,050 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:28,692 - trinity - INFO - Stored conversation entry in vector DB: entry_76caf6d4dc2633dc0497484c590c9fa3
+2025-06-10 16:43:28,693 - trinity - INFO - Added conversation message: entry_76caf6d4dc2633dc0497484c590c9fa3
+2025-06-10 16:43:29,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:29,595 - trinity - INFO - Stored conversation entry in vector DB: entry_8a1c6cc8f2bc7be57ad38ad764e11c75
+2025-06-10 16:43:29,597 - trinity - INFO - Added conversation message: entry_8a1c6cc8f2bc7be57ad38ad764e11c75
+2025-06-10 16:43:29,808 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:30,446 - trinity - INFO - Stored conversation entry in vector DB: entry_ba7ecfa483eff5c3772d1c8b0a0c684a
+2025-06-10 16:43:30,447 - trinity - INFO - Added conversation message: entry_ba7ecfa483eff5c3772d1c8b0a0c684a
+2025-06-10 16:43:30,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:31,338 - trinity - INFO - Stored conversation entry in vector DB: entry_603e20f5c748f2c3745f6d909aef0ea9
+2025-06-10 16:43:33,316 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:43:33,839 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:43:34,410 - trinity - INFO - Uploaded file: temp/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164333.json -> /home/trinityai/memory/categories/sessions/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164333.json
+2025-06-10 16:43:34,413 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164333.json'
+2025-06-10 16:43:34,413 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164333.json'
+2025-06-10 16:43:34,414 - trinity - INFO - Added conversation message: entry_603e20f5c748f2c3745f6d909aef0ea9
+2025-06-10 16:43:34,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:43:35,329 - trinity - INFO - Stored conversation entry in vector DB: entry_8225b83ffaaa4e3ddf9bd06b2c54f38b
+2025-06-10 16:43:36,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:43:36,833 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:43:37,380 - trinity - INFO - Uploaded file: temp/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164336.json -> /home/trinityai/memory/categories/sessions/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164336.json
+2025-06-10 16:43:37,382 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164336.json'
+2025-06-10 16:43:37,383 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_6bbe3ac05e3565bfbaab9dfcd53d4f7f_20250610_164336.json'
+2025-06-10 16:43:37,384 - trinity - INFO - Added conversation message: entry_8225b83ffaaa4e3ddf9bd06b2c54f38b
+2025-06-10 16:43:37,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:21,922 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:44:21,930 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:44:21,978 - trinity - INFO - Created session: session_7a03649926707cffc0dc5fe3f5c48bba
+2025-06-10 16:44:22,429 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:23,187 - trinity - INFO - Stored conversation entry in vector DB: entry_59358b64d344aef0978d4c5b9fedd076
+2025-06-10 16:44:23,188 - trinity - INFO - Added conversation message: entry_59358b64d344aef0978d4c5b9fedd076
+2025-06-10 16:44:23,385 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:24,014 - trinity - INFO - Stored conversation entry in vector DB: entry_5a1e932ca5a97849e96c6232c93a8fee
+2025-06-10 16:44:24,015 - trinity - INFO - Added conversation message: entry_5a1e932ca5a97849e96c6232c93a8fee
+2025-06-10 16:44:24,232 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:24,824 - trinity - INFO - Stored conversation entry in vector DB: entry_c68fb25ee96eee5f0d462f6779689492
+2025-06-10 16:44:24,826 - trinity - INFO - Added conversation message: entry_c68fb25ee96eee5f0d462f6779689492
+2025-06-10 16:44:25,088 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:25,706 - trinity - INFO - Stored conversation entry in vector DB: entry_9c2b50638d0821598a068def3c948ad2
+2025-06-10 16:44:25,707 - trinity - INFO - Added conversation message: entry_9c2b50638d0821598a068def3c948ad2
+2025-06-10 16:44:25,891 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:26,491 - trinity - INFO - Stored conversation entry in vector DB: entry_2bff14414a5aa394ca98bfe576459a4f
+2025-06-10 16:44:27,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:44:27,633 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:44:27,637 - trinity - ERROR - Failed to save session to NAS: Logger.log() missing 1 required positional argument: 'msg'
+2025-06-10 16:44:27,637 - trinity - INFO - Added conversation message: entry_2bff14414a5aa394ca98bfe576459a4f
+2025-06-10 16:44:27,819 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:44:28,467 - trinity - INFO - Stored conversation entry in vector DB: entry_a506b4216b26f50b4c6a92e41c37a0df
+2025-06-10 16:44:29,413 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:44:30,174 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:44:30,182 - trinity - ERROR - Failed to save session to NAS: Logger.log() missing 1 required positional argument: 'msg'
+2025-06-10 16:44:30,187 - trinity - INFO - Added conversation message: entry_a506b4216b26f50b4c6a92e41c37a0df
+2025-06-10 16:44:30,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:09,268 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:48:09,276 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:48:09,320 - trinity - INFO - Created session: session_707b4760e9482b7ac8e0dee761418394
+2025-06-10 16:48:09,919 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:10,661 - trinity - INFO - Stored conversation entry in vector DB: entry_afae14d01efc5c79c314e3b55badb921
+2025-06-10 16:48:10,663 - trinity - INFO - Added conversation message: entry_afae14d01efc5c79c314e3b55badb921
+2025-06-10 16:48:10,865 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:11,497 - trinity - INFO - Stored conversation entry in vector DB: entry_b93f4d857b42e36a257869d64ae6a84f
+2025-06-10 16:48:11,500 - trinity - INFO - Added conversation message: entry_b93f4d857b42e36a257869d64ae6a84f
+2025-06-10 16:48:11,862 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:12,487 - trinity - INFO - Stored conversation entry in vector DB: entry_d981069b786bc558e6fb697efd09ff4a
+2025-06-10 16:48:12,488 - trinity - INFO - Added conversation message: entry_d981069b786bc558e6fb697efd09ff4a
+2025-06-10 16:48:12,666 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:13,269 - trinity - INFO - Stored conversation entry in vector DB: entry_3d05381694c969c650a38de5a8bc69e8
+2025-06-10 16:48:13,270 - trinity - INFO - Added conversation message: entry_3d05381694c969c650a38de5a8bc69e8
+2025-06-10 16:48:13,466 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:14,075 - trinity - INFO - Stored conversation entry in vector DB: entry_5d39de5899c7058c310ed6523be60279
+2025-06-10 16:48:14,117 - trinity - INFO - ------------------------------session--------
+2025-06-10 16:48:15,008 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:48:15,901 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:48:15,906 - trinity - ERROR - Failed to save session to NAS: Logger.log() missing 1 required positional argument: 'msg'
+2025-06-10 16:48:15,906 - trinity - INFO - Added conversation message: entry_5d39de5899c7058c310ed6523be60279
+2025-06-10 16:48:16,165 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:48:16,767 - trinity - INFO - Stored conversation entry in vector DB: entry_8dd857d5cb75853c542497f3e580b43c
+2025-06-10 16:48:16,767 - trinity - INFO - ------------------------------session--------
+2025-06-10 16:48:17,585 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:48:18,579 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:48:18,582 - trinity - ERROR - Failed to save session to NAS: Logger.log() missing 1 required positional argument: 'msg'
+2025-06-10 16:48:18,583 - trinity - INFO - Added conversation message: entry_8dd857d5cb75853c542497f3e580b43c
+2025-06-10 16:50:06,007 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:50:06,015 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:50:06,063 - trinity - INFO - Created session: session_f181b056663be111a74a5afdcb77a94a
+2025-06-10 16:50:06,699 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:50:07,473 - trinity - INFO - Stored conversation entry in vector DB: entry_65f8d96e124cefcce01642d6afc37772
+2025-06-10 16:50:07,475 - trinity - INFO - Added conversation message: entry_65f8d96e124cefcce01642d6afc37772
+2025-06-10 16:50:07,745 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:50:08,376 - trinity - INFO - Stored conversation entry in vector DB: entry_abbb0414b5d50c6aa87282de81b6b114
+2025-06-10 16:50:08,379 - trinity - INFO - Added conversation message: entry_abbb0414b5d50c6aa87282de81b6b114
+2025-06-10 16:50:08,564 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:50:09,191 - trinity - INFO - Stored conversation entry in vector DB: entry_6512f63f4774e2d9dbb9ecddacbdfbef
+2025-06-10 16:50:09,192 - trinity - INFO - Added conversation message: entry_6512f63f4774e2d9dbb9ecddacbdfbef
+2025-06-10 16:50:09,389 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:50:10,077 - trinity - INFO - Stored conversation entry in vector DB: entry_f823ec3cf9f8f32cef0803eddfb46d8a
+2025-06-10 16:50:10,079 - trinity - INFO - Added conversation message: entry_f823ec3cf9f8f32cef0803eddfb46d8a
+2025-06-10 16:50:10,368 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:50:10,969 - trinity - INFO - Stored conversation entry in vector DB: entry_4f5c8afe7af90d1cb9557cfc7f108f89
+2025-06-10 16:50:10,973 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:50:12,262 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:50:13,290 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:50:13,293 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:50:13,884 - trinity - INFO - Uploaded file: temp/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165013.json -> /home/trinityai/memory/categories/sessions/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165013.json
+2025-06-10 16:50:13,885 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165013.json'
+2025-06-10 16:50:13,885 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165013.json'
+2025-06-10 16:50:13,885 - trinity - INFO - Added conversation message: entry_4f5c8afe7af90d1cb9557cfc7f108f89
+2025-06-10 16:50:14,114 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:50:14,738 - trinity - INFO - Stored conversation entry in vector DB: entry_20d51148ec3dda31886870d2fea21c3e
+2025-06-10 16:50:14,739 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:50:15,715 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:50:16,367 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:50:16,369 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:50:16,960 - trinity - INFO - Uploaded file: temp/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165016.json -> /home/trinityai/memory/categories/sessions/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165016.json
+2025-06-10 16:50:16,966 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165016.json'
+2025-06-10 16:50:16,967 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_f181b056663be111a74a5afdcb77a94a_20250610_165016.json'
+2025-06-10 16:50:16,967 - trinity - INFO - Added conversation message: entry_20d51148ec3dda31886870d2fea21c3e
+2025-06-10 16:54:44,630 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:54:44,637 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:54:44,681 - trinity - INFO - Created session: session_749c165fd87de86257f407cc9d11629a
+2025-06-10 16:54:45,348 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:54:46,142 - trinity - INFO - Stored conversation entry in vector DB: entry_71ac2bb27b982886594ca4deb627257e
+2025-06-10 16:54:46,143 - trinity - INFO - Added conversation message: entry_71ac2bb27b982886594ca4deb627257e
+2025-06-10 16:54:46,785 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:54:47,562 - trinity - INFO - Stored conversation entry in vector DB: entry_defa3c460a187120e78815af27d6d1ae
+2025-06-10 16:54:47,567 - trinity - INFO - Added conversation message: entry_defa3c460a187120e78815af27d6d1ae
+2025-06-10 16:54:48,079 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:54:48,824 - trinity - INFO - Stored conversation entry in vector DB: entry_97d4714922cbd0add8490329ee636cf5
+2025-06-10 16:54:48,826 - trinity - INFO - Added conversation message: entry_97d4714922cbd0add8490329ee636cf5
+2025-06-10 16:54:49,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:54:49,706 - trinity - INFO - Stored conversation entry in vector DB: entry_577fd911c4165bff2a7fe3b5f6a2c625
+2025-06-10 16:54:49,707 - trinity - INFO - Added conversation message: entry_577fd911c4165bff2a7fe3b5f6a2c625
+2025-06-10 16:54:49,946 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:54:50,663 - trinity - INFO - Stored conversation entry in vector DB: entry_557a4f20fbb01bd64cfeef0cb2db42e5
+2025-06-10 16:54:50,665 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:54:51,198 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:54:52,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:54:52,290 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:54:52,893 - trinity - INFO - Uploaded file: temp/session_session_749c165fd87de86257f407cc9d11629a_20250610_165452.json -> /home/trinityai/memory/categories/sessions/session_session_749c165fd87de86257f407cc9d11629a_20250610_165452.json
+2025-06-10 16:54:52,894 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_749c165fd87de86257f407cc9d11629a_20250610_165452.json'
+2025-06-10 16:54:52,895 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_749c165fd87de86257f407cc9d11629a_20250610_165452.json'
+2025-06-10 16:54:52,895 - trinity - INFO - Added conversation message: entry_557a4f20fbb01bd64cfeef0cb2db42e5
+2025-06-10 16:54:53,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:54:53,843 - trinity - INFO - Stored conversation entry in vector DB: entry_8f447ca41671b52d0e7109a3fe8e2582
+2025-06-10 16:54:53,844 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:54:54,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:54:55,143 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:54:55,146 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:54:55,731 - trinity - INFO - Uploaded file: temp/session_session_749c165fd87de86257f407cc9d11629a_20250610_165455.json -> /home/trinityai/memory/categories/sessions/session_session_749c165fd87de86257f407cc9d11629a_20250610_165455.json
+2025-06-10 16:54:55,733 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_749c165fd87de86257f407cc9d11629a_20250610_165455.json'
+2025-06-10 16:54:55,733 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_749c165fd87de86257f407cc9d11629a_20250610_165455.json'
+2025-06-10 16:54:55,734 - trinity - INFO - Added conversation message: entry_8f447ca41671b52d0e7109a3fe8e2582
+2025-06-10 16:55:17,530 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:55:17,634 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:55:17,677 - trinity - INFO - Created session: session_413d3f642ec6b6b71373ab0cc20ec286
+2025-06-10 16:55:18,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:55:19,016 - trinity - INFO - Stored conversation entry in vector DB: entry_d4fa9ac6da3855f5a025eaebe82fbc2f
+2025-06-10 16:55:19,017 - trinity - INFO - Added conversation message: entry_d4fa9ac6da3855f5a025eaebe82fbc2f
+2025-06-10 16:55:19,455 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:55:20,124 - trinity - INFO - Stored conversation entry in vector DB: entry_0fd65c64e353c81adc8ba028c7cc2b5c
+2025-06-10 16:55:20,125 - trinity - INFO - Added conversation message: entry_0fd65c64e353c81adc8ba028c7cc2b5c
+2025-06-10 16:55:20,441 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:55:21,089 - trinity - INFO - Stored conversation entry in vector DB: entry_08fb14a355752dc0c30bf048aeee4644
+2025-06-10 16:55:21,090 - trinity - INFO - Added conversation message: entry_08fb14a355752dc0c30bf048aeee4644
+2025-06-10 16:55:21,310 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:55:22,012 - trinity - INFO - Stored conversation entry in vector DB: entry_bc020444b6be64444998a0ec49f1c40c
+2025-06-10 16:55:22,013 - trinity - INFO - Added conversation message: entry_bc020444b6be64444998a0ec49f1c40c
+2025-06-10 16:55:22,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:55:22,883 - trinity - INFO - Stored conversation entry in vector DB: entry_28b6b92d180451a5969fc57311f93648
+2025-06-10 16:55:22,884 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:55:23,825 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:55:24,436 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:55:24,442 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:55:24,993 - trinity - INFO - Uploaded file: temp/session_session_413d3f642ec6b6b71373ab0cc20ec286_20250610_165524.json -> /home/trinityai/memory/categories/sessions/session_session_413d3f642ec6b6b71373ab0cc20ec286_20250610_165524.json
+2025-06-10 16:55:24,994 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_413d3f642ec6b6b71373ab0cc20ec286_20250610_165524.json'
+2025-06-10 16:55:30,253 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 16:55:30,254 - trinity - INFO - Added conversation message: entry_28b6b92d180451a5969fc57311f93648
+2025-06-10 16:55:30,472 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:55:31,185 - trinity - INFO - Stored conversation entry in vector DB: entry_e662ed910c6cac2038dfafb337eb42e7
+2025-06-10 16:55:31,186 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:55:32,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:55:32,702 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:55:32,705 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:55:33,284 - trinity - INFO - Uploaded file: temp/session_session_413d3f642ec6b6b71373ab0cc20ec286_20250610_165532.json -> /home/trinityai/memory/categories/sessions/session_session_413d3f642ec6b6b71373ab0cc20ec286_20250610_165532.json
+2025-06-10 16:55:33,329 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_413d3f642ec6b6b71373ab0cc20ec286_20250610_165532.json'
+2025-06-10 16:55:38,411 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 16:55:38,413 - trinity - INFO - Added conversation message: entry_e662ed910c6cac2038dfafb337eb42e7
+2025-06-10 16:56:48,481 - trinity - INFO - Successfully connected to NAS
+2025-06-10 16:56:48,524 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 16:56:48,583 - trinity - INFO - Created session: session_b68915ba32f38f4f55b3bafff5a8886d
+2025-06-10 16:56:49,045 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:56:49,885 - trinity - INFO - Stored conversation entry in vector DB: entry_f07a6e5fdcebec5a9b2f1db7712bc030
+2025-06-10 16:56:49,886 - trinity - INFO - Added conversation message: entry_f07a6e5fdcebec5a9b2f1db7712bc030
+2025-06-10 16:56:50,070 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:56:50,838 - trinity - INFO - Stored conversation entry in vector DB: entry_0f20653446d53a7d2b5a6492e96b9abe
+2025-06-10 16:56:50,839 - trinity - INFO - Added conversation message: entry_0f20653446d53a7d2b5a6492e96b9abe
+2025-06-10 16:56:51,250 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:56:51,913 - trinity - INFO - Stored conversation entry in vector DB: entry_23c382d7e18354d904947eff65c6d548
+2025-06-10 16:56:51,915 - trinity - INFO - Added conversation message: entry_23c382d7e18354d904947eff65c6d548
+2025-06-10 16:56:52,105 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:56:52,729 - trinity - INFO - Stored conversation entry in vector DB: entry_8f446cc94f5b45853abf01b6878909ba
+2025-06-10 16:56:52,731 - trinity - INFO - Added conversation message: entry_8f446cc94f5b45853abf01b6878909ba
+2025-06-10 16:56:52,919 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:56:53,615 - trinity - INFO - Stored conversation entry in vector DB: entry_803480f66c7b4784bc4f3cada7b1f9be
+2025-06-10 16:56:53,617 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:56:54,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:56:54,886 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:56:54,924 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:56:55,493 - trinity - INFO - Uploaded file: temp/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165654.json -> /home/trinityai/memory/categories/sessions/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165654.json
+2025-06-10 16:56:55,495 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165654.json'
+2025-06-10 16:56:55,495 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165654.json'
+2025-06-10 16:56:55,496 - trinity - INFO - Added conversation message: entry_803480f66c7b4784bc4f3cada7b1f9be
+2025-06-10 16:56:55,803 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 16:56:56,455 - trinity - INFO - Stored conversation entry in vector DB: entry_9703821068c8b2ad56e48c840b996109
+2025-06-10 16:56:56,456 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 16:56:57,035 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:56:57,571 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 16:56:57,574 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 16:56:58,303 - trinity - INFO - Uploaded file: temp/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165657.json -> /home/trinityai/memory/categories/sessions/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165657.json
+2025-06-10 16:56:58,304 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165657.json'
+2025-06-10 16:56:58,304 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_b68915ba32f38f4f55b3bafff5a8886d_20250610_165657.json'
+2025-06-10 16:56:58,304 - trinity - INFO - Added conversation message: entry_9703821068c8b2ad56e48c840b996109
+2025-06-10 17:01:26,848 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:01:26,855 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:01:26,899 - trinity - INFO - Created session: session_638e50d32f7d3f7ace4eb4113fa38ca5
+2025-06-10 17:01:27,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:01:28,160 - trinity - INFO - Stored conversation entry in vector DB: entry_33f77844024c3e6119299a1918abe1ea
+2025-06-10 17:01:28,165 - trinity - INFO - Added conversation message: entry_33f77844024c3e6119299a1918abe1ea
+2025-06-10 17:01:28,363 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:01:28,956 - trinity - INFO - Stored conversation entry in vector DB: entry_4a915a534f7ec7ceb337eafd93ad46c5
+2025-06-10 17:01:28,957 - trinity - INFO - Added conversation message: entry_4a915a534f7ec7ceb337eafd93ad46c5
+2025-06-10 17:01:29,194 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:01:29,808 - trinity - INFO - Stored conversation entry in vector DB: entry_e2cc5e40e721ea4cedb0e58831a14f6a
+2025-06-10 17:01:29,809 - trinity - INFO - Added conversation message: entry_e2cc5e40e721ea4cedb0e58831a14f6a
+2025-06-10 17:01:30,280 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:01:30,938 - trinity - INFO - Stored conversation entry in vector DB: entry_f23832b0f203cde860930780f04c575c
+2025-06-10 17:01:30,940 - trinity - INFO - Added conversation message: entry_f23832b0f203cde860930780f04c575c
+2025-06-10 17:01:31,316 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:01:31,945 - trinity - INFO - Stored conversation entry in vector DB: entry_3f6c92feb117ed051322ce5bb34dbd92
+2025-06-10 17:01:31,947 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:01:32,623 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:01:33,169 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:01:33,172 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:01:34,293 - trinity - INFO - Uploaded file: temp/session_session_638e50d32f7d3f7ace4eb4113fa38ca5_20250610_170133.json -> /home/trinityai/memory/categories/sessions/session_session_638e50d32f7d3f7ace4eb4113fa38ca5_20250610_170133.json
+2025-06-10 17:01:34,301 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'trinity_memory/categories/sessions'
+2025-06-10 17:01:34,303 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_638e50d32f7d3f7ace4eb4113fa38ca5_20250610_170133.json'
+2025-06-10 17:01:34,303 - trinity - INFO - Added conversation message: entry_3f6c92feb117ed051322ce5bb34dbd92
+2025-06-10 17:01:34,552 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:01:35,220 - trinity - INFO - Stored conversation entry in vector DB: entry_da57dc4448b5e46852b575396548543a
+2025-06-10 17:01:35,221 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:01:36,043 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:01:36,539 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:01:36,542 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:01:37,178 - trinity - INFO - Uploaded file: temp/session_session_638e50d32f7d3f7ace4eb4113fa38ca5_20250610_170136.json -> /home/trinityai/memory/categories/sessions/session_session_638e50d32f7d3f7ace4eb4113fa38ca5_20250610_170136.json
+2025-06-10 17:01:37,194 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'trinity_memory/categories/sessions'
+2025-06-10 17:01:37,194 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_638e50d32f7d3f7ace4eb4113fa38ca5_20250610_170136.json'
+2025-06-10 17:01:37,195 - trinity - INFO - Added conversation message: entry_da57dc4448b5e46852b575396548543a
+2025-06-10 17:05:53,347 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:05:53,358 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:05:53,403 - trinity - INFO - Created session: session_ec80cc31059860d883148914034d753d
+2025-06-10 17:05:53,929 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:05:54,728 - trinity - INFO - Stored conversation entry in vector DB: entry_19848974febf00bd47f884769968bbc4
+2025-06-10 17:05:54,741 - trinity - INFO - Added conversation message: entry_19848974febf00bd47f884769968bbc4
+2025-06-10 17:05:54,930 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:05:55,689 - trinity - INFO - Stored conversation entry in vector DB: entry_8c6bb033651e210ca30fae47992a633a
+2025-06-10 17:05:55,691 - trinity - INFO - Added conversation message: entry_8c6bb033651e210ca30fae47992a633a
+2025-06-10 17:05:55,902 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:05:56,532 - trinity - INFO - Stored conversation entry in vector DB: entry_0c91dd778db860dd07d8021c13b3a7ea
+2025-06-10 17:05:56,534 - trinity - INFO - Added conversation message: entry_0c91dd778db860dd07d8021c13b3a7ea
+2025-06-10 17:05:56,715 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:05:57,367 - trinity - INFO - Stored conversation entry in vector DB: entry_e781992c025c0834d320fb040555339a
+2025-06-10 17:05:57,368 - trinity - INFO - Added conversation message: entry_e781992c025c0834d320fb040555339a
+2025-06-10 17:05:57,558 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:05:58,236 - trinity - INFO - Stored conversation entry in vector DB: entry_cea8e5541f7f92b03f59b39777d17fd1
+2025-06-10 17:05:58,237 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:05:59,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:05:59,797 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:05:59,800 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:06:00,601 - trinity - INFO - Uploaded file: temp/session_session_ec80cc31059860d883148914034d753d_20250610_170559.json -> /home/trinityai/memory/categories/sessions/session_session_ec80cc31059860d883148914034d753d_20250610_170559.json
+2025-06-10 17:06:00,603 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'categories/sessions/session_session_ec80cc31059860d883148914034d753d_20250610_170559.json'
+2025-06-10 17:06:00,604 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_ec80cc31059860d883148914034d753d_20250610_170559.json'
+2025-06-10 17:06:00,604 - trinity - INFO - Added conversation message: entry_cea8e5541f7f92b03f59b39777d17fd1
+2025-06-10 17:06:00,853 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:06:01,536 - trinity - INFO - Stored conversation entry in vector DB: entry_f6f05efd4aad4cb8cccfd9fd1cf327bd
+2025-06-10 17:06:01,543 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:06:02,448 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:06:03,480 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:06:03,484 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:06:04,110 - trinity - INFO - Uploaded file: temp/session_session_ec80cc31059860d883148914034d753d_20250610_170603.json -> /home/trinityai/memory/categories/sessions/session_session_ec80cc31059860d883148914034d753d_20250610_170603.json
+2025-06-10 17:06:04,111 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'categories/sessions/session_session_ec80cc31059860d883148914034d753d_20250610_170603.json'
+2025-06-10 17:06:04,112 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_ec80cc31059860d883148914034d753d_20250610_170603.json'
+2025-06-10 17:06:04,112 - trinity - INFO - Added conversation message: entry_f6f05efd4aad4cb8cccfd9fd1cf327bd
+2025-06-10 17:07:35,075 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:07:35,082 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:07:35,124 - trinity - INFO - Created session: session_f89e8faf726836648d2c85ed9d191ffc
+2025-06-10 17:07:35,731 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:07:36,529 - trinity - INFO - Stored conversation entry in vector DB: entry_afc6858111ce1979e08921a410dc7e95
+2025-06-10 17:07:36,531 - trinity - INFO - Added conversation message: entry_afc6858111ce1979e08921a410dc7e95
+2025-06-10 17:07:36,849 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:07:37,542 - trinity - INFO - Stored conversation entry in vector DB: entry_c00585cc72532067e359421df7a51bfd
+2025-06-10 17:07:37,547 - trinity - INFO - Added conversation message: entry_c00585cc72532067e359421df7a51bfd
+2025-06-10 17:07:37,807 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:07:38,449 - trinity - INFO - Stored conversation entry in vector DB: entry_4d98011270769d365f280c1d841a7ea8
+2025-06-10 17:07:38,450 - trinity - INFO - Added conversation message: entry_4d98011270769d365f280c1d841a7ea8
+2025-06-10 17:07:38,697 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:07:39,360 - trinity - INFO - Stored conversation entry in vector DB: entry_1e5270594e39a2d2cdaf1b868c589b66
+2025-06-10 17:07:39,362 - trinity - INFO - Added conversation message: entry_1e5270594e39a2d2cdaf1b868c589b66
+2025-06-10 17:07:39,646 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:07:40,335 - trinity - INFO - Stored conversation entry in vector DB: entry_b608db1cae616f83eb20dc86901d9845
+2025-06-10 17:07:40,336 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:07:40,993 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:07:41,759 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:07:41,764 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:07:42,380 - trinity - INFO - Uploaded file: temp/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170741.json -> /home/trinityai/memory/categories/sessions/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170741.json
+2025-06-10 17:07:42,386 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170741.json'
+2025-06-10 17:07:42,387 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170741.json'
+2025-06-10 17:07:42,388 - trinity - INFO - Added conversation message: entry_b608db1cae616f83eb20dc86901d9845
+2025-06-10 17:07:42,863 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:07:43,512 - trinity - INFO - Stored conversation entry in vector DB: entry_22cf1b3eb4e420d714e2474cee65b5f5
+2025-06-10 17:07:43,513 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:07:44,547 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:07:45,619 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:07:45,623 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:07:46,220 - trinity - INFO - Uploaded file: temp/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170745.json -> /home/trinityai/memory/categories/sessions/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170745.json
+2025-06-10 17:07:46,220 - trinity - ERROR - Failed to upload file to Google Drive: [Errno 2] No such file or directory: 'temp/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170745.json'
+2025-06-10 17:07:46,221 - trinity - ERROR - Failed to save session to NAS: [WinError 2] The system cannot find the file specified: 'temp/session_session_f89e8faf726836648d2c85ed9d191ffc_20250610_170745.json'
+2025-06-10 17:07:46,221 - trinity - INFO - Added conversation message: entry_22cf1b3eb4e420d714e2474cee65b5f5
+2025-06-10 17:12:46,056 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:12:46,074 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:12:46,126 - trinity - INFO - Created session: session_741007100f4334946d7adee28ab9b460
+2025-06-10 17:12:46,605 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:12:47,591 - trinity - INFO - Stored conversation entry in vector DB: entry_a9e587f75729cc96a61a31f74228b16b
+2025-06-10 17:12:47,593 - trinity - INFO - Added conversation message: entry_a9e587f75729cc96a61a31f74228b16b
+2025-06-10 17:12:47,961 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:12:48,644 - trinity - INFO - Stored conversation entry in vector DB: entry_656ad046403af2ce3c90b1af3b3bf9a2
+2025-06-10 17:12:48,645 - trinity - INFO - Added conversation message: entry_656ad046403af2ce3c90b1af3b3bf9a2
+2025-06-10 17:12:48,912 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:12:49,551 - trinity - INFO - Stored conversation entry in vector DB: entry_e8f6a5fdd210e85c185f4b4e06d6dd57
+2025-06-10 17:12:49,553 - trinity - INFO - Added conversation message: entry_e8f6a5fdd210e85c185f4b4e06d6dd57
+2025-06-10 17:12:49,795 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:12:50,417 - trinity - INFO - Stored conversation entry in vector DB: entry_ebfba0c1c363fadaf64d6081df893967
+2025-06-10 17:12:50,421 - trinity - INFO - Added conversation message: entry_ebfba0c1c363fadaf64d6081df893967
+2025-06-10 17:12:50,604 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:12:51,296 - trinity - INFO - Stored conversation entry in vector DB: entry_dea29be122eec043e2c539f6b583cc06
+2025-06-10 17:12:51,297 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:12:52,201 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:12:52,997 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:12:53,000 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:12:53,592 - trinity - INFO - Uploaded file: temp/session_session_741007100f4334946d7adee28ab9b460_20250610_171253.json -> /home/trinityai/memory/categories/sessions/session_session_741007100f4334946d7adee28ab9b460_20250610_171253.json
+2025-06-10 17:12:54,893 - trinity - INFO - Uploaded file to Google Drive: categories/sessions/session_session_741007100f4334946d7adee28ab9b460_20250610_171253.json
+2025-06-10 17:12:59,998 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 17:12:59,999 - trinity - INFO - Added conversation message: entry_dea29be122eec043e2c539f6b583cc06
+2025-06-10 17:13:00,273 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:13:00,991 - trinity - INFO - Stored conversation entry in vector DB: entry_5644d8f189eafab246fba6a8fa98783f
+2025-06-10 17:13:00,992 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:13:01,825 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:13:02,803 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:13:02,806 - trinity - INFO - -----------------------save start----------------------
+2025-06-10 17:13:03,341 - trinity - INFO - Uploaded file: temp/session_session_741007100f4334946d7adee28ab9b460_20250610_171302.json -> /home/trinityai/memory/categories/sessions/session_session_741007100f4334946d7adee28ab9b460_20250610_171302.json
+2025-06-10 17:13:04,501 - trinity - INFO - Uploaded file to Google Drive: categories/sessions/session_session_741007100f4334946d7adee28ab9b460_20250610_171302.json
+2025-06-10 17:13:09,716 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 17:13:09,717 - trinity - INFO - Added conversation message: entry_5644d8f189eafab246fba6a8fa98783f
+2025-06-10 17:16:01,711 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:16:01,719 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:16:01,766 - trinity - INFO - Created session: session_056cce5afa1fd86eca3117b6179d3aa9
+2025-06-10 17:16:02,232 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:16:03,094 - trinity - INFO - Stored conversation entry in vector DB: entry_0c8a6233424dacafe02758b5503f2065
+2025-06-10 17:16:03,095 - trinity - INFO - Added conversation message: entry_0c8a6233424dacafe02758b5503f2065
+2025-06-10 17:16:03,275 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:16:03,936 - trinity - INFO - Stored conversation entry in vector DB: entry_3e10599081051a89eab0cc29d1157107
+2025-06-10 17:16:03,937 - trinity - INFO - Added conversation message: entry_3e10599081051a89eab0cc29d1157107
+2025-06-10 17:16:04,138 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:16:04,802 - trinity - INFO - Stored conversation entry in vector DB: entry_c1382d8fdbafa6743c63e84c664767c8
+2025-06-10 17:16:04,803 - trinity - INFO - Added conversation message: entry_c1382d8fdbafa6743c63e84c664767c8
+2025-06-10 17:16:05,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:16:05,625 - trinity - INFO - Stored conversation entry in vector DB: entry_0581445386f4ef58e6d2288e0f984970
+2025-06-10 17:16:05,627 - trinity - INFO - Added conversation message: entry_0581445386f4ef58e6d2288e0f984970
+2025-06-10 17:16:05,810 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:16:06,438 - trinity - INFO - Stored conversation entry in vector DB: entry_1f5e5764edd65a48f8b409d1f9d96525
+2025-06-10 17:16:06,439 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:16:07,265 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:16:08,231 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:16:08,801 - trinity - INFO - Uploaded file: temp/session_session_056cce5afa1fd86eca3117b6179d3aa9_20250610_171608.json -> /home/trinityai/memory/categories/sessions/session_session_056cce5afa1fd86eca3117b6179d3aa9_20250610_171608.json
+2025-06-10 17:16:11,167 - trinity - INFO - Uploaded file to Google Drive: session_session_056cce5afa1fd86eca3117b6179d3aa9_20250610_171608.json
+2025-06-10 17:16:16,247 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 17:16:16,248 - trinity - INFO - Added conversation message: entry_1f5e5764edd65a48f8b409d1f9d96525
+2025-06-10 17:16:16,464 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:16:17,110 - trinity - INFO - Stored conversation entry in vector DB: entry_db475758a2ad5cf6999b3f75e44decd7
+2025-06-10 17:16:17,111 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:16:18,289 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:16:18,843 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:16:19,411 - trinity - INFO - Uploaded file: temp/session_session_056cce5afa1fd86eca3117b6179d3aa9_20250610_171618.json -> /home/trinityai/memory/categories/sessions/session_session_056cce5afa1fd86eca3117b6179d3aa9_20250610_171618.json
+2025-06-10 17:16:21,764 - trinity - INFO - Uploaded file to Google Drive: session_session_056cce5afa1fd86eca3117b6179d3aa9_20250610_171618.json
+2025-06-10 17:16:27,165 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 17:16:27,166 - trinity - INFO - Added conversation message: entry_db475758a2ad5cf6999b3f75e44decd7
+2025-06-10 17:24:50,926 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:24:50,936 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:24:50,975 - trinity - INFO - Created session: session_914d9f32f6f4cf75c5dcabaef96bc4ba
+2025-06-10 17:24:51,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:26:18,247 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:26:18,254 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:26:18,310 - trinity - INFO - Created session: session_d93a270808e438678f00aa229c24984e
+2025-06-10 17:26:18,854 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:26:19,392 - trinity - INFO - search results:MemoryContext(vector_results=[{'content': 'Can you tell me about data structures in Python?', 'metadata': {'entry_id': 'entry_0c91dd778db860dd07d8021c13b3a7ea', 'role': 'user', 'session_id': 'session_ec80cc31059860d883148914034d753d', 'test': True, 'timestamp': '2025-06-10T17:05:55.692795', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.740037262, 'source': 'vector'}, {'content': 'Can you tell me about data structures in Python?', 'metadata': {'entry_id': 'entry_6512f63f4774e2d9dbb9ecddacbdfbef', 'role': 'user', 'session_id': 'session_f181b056663be111a74a5afdcb77a94a', 'test': True, 'timestamp': '2025-06-10T16:50:08.379682', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.740037262, 'source': 'vector'}, {'content': 'Can you tell me about data structures in Python?', 'metadata': {'entry_id': 'entry_d981069b786bc558e6fb697efd09ff4a', 'role': 'user', 'session_id': 'session_707b4760e9482b7ac8e0dee761418394', 'test': True, 'timestamp': '2025-06-10T16:48:11.500208', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.740025043, 'source': 'vector'}, {'content': 'Can you tell me about data structures in Python?', 'metadata': {'entry_id': 'entry_e3817587a51f8041bba6d14c682f8afb', 'role': 'user', 'session_id': 'session_4346bf93ae4fd4903dfb122bd202577d', 'test': True, 'timestamp': '2025-06-10T14:17:10.588261', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.73997432, 'source': 'vector'}, {'content': 'Can you tell me about data structures in Python?', 'metadata': {'entry_id': 'entry_370c38bd7162bb0eac3129de58e0865c', 'role': 'user', 'session_id': 'session_e9155afbcf268d69630fc001aec1ebe4', 'test': True, 'timestamp': '2025-06-10T14:43:50.191536', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.73997432, 'source': 'vector'}], nas_entries=[], relevance_score=0.51800674898, search_query='Python programming data structures')
+2025-06-10 17:29:53,245 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:29:53,253 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:29:53,301 - trinity - INFO - Created session: session_019f97afe8fc08abe62e0787176b1982
+2025-06-10 17:29:53,828 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:29:54,329 - trinity - INFO - search results:MemoryContext(vector_results=[{'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_71ac2bb27b982886594ca4deb627257e', 'role': 'user', 'session_id': 'session_749c165fd87de86257f407cc9d11629a', 'test': True, 'timestamp': '2025-06-10T16:54:44.682956', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.691821218, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_edc46942717a5efe01ee797478d0b7e8', 'role': 'user', 'session_id': 'session_adf8262b8bed2137d3e8e6369af9fdf2', 'test': True, 'timestamp': '2025-06-10T14:37:25.780361', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.691777, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_f07a6e5fdcebec5a9b2f1db7712bc030', 'role': 'user', 'session_id': 'session_b68915ba32f38f4f55b3bafff5a8886d', 'test': True, 'timestamp': '2025-06-10T16:56:48.584029', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.691777, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_355bb127d4f2f7a0c991adf73211158d', 'role': 'user', 'session_id': 'session_e9155afbcf268d69630fc001aec1ebe4', 'test': True, 'timestamp': '2025-06-10T14:43:48.005886', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.691777, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_3163e0ae5931390f482b850282797293', 'role': 'user', 'session_id': 'session_03b89b81f2afd6c64c0bb1391d4e0a3a', 'test': True, 'timestamp': '2025-06-10T14:56:06.385218', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.691777, 'source': 'vector'}], nas_entries=[], relevance_score=0.48425009051999995, search_query='who do you learn about python?')
+2025-06-10 17:30:49,295 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:30:49,305 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:30:49,359 - trinity - INFO - Created session: session_ccd2dd5dda362a902c1654f10786ffef
+2025-06-10 17:30:49,805 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:30:50,344 - trinity - INFO - search results:MemoryContext(vector_results=[{'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_71ac2bb27b982886594ca4deb627257e', 'role': 'user', 'session_id': 'session_749c165fd87de86257f407cc9d11629a', 'test': True, 'timestamp': '2025-06-10T16:54:44.682956', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616187513, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_65f8d96e124cefcce01642d6afc37772', 'role': 'user', 'session_id': 'session_f181b056663be111a74a5afdcb77a94a', 'test': True, 'timestamp': '2025-06-10T16:50:06.064439', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616187394, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_0904f5a575ac986a18bfccd087161fe8', 'role': 'user', 'session_id': 'session_391d13969f28afabcb0b0db2e8764ab5', 'test': True, 'timestamp': '2025-06-10T14:45:41.861165', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616187394, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_a9e587f75729cc96a61a31f74228b16b', 'role': 'user', 'session_id': 'session_741007100f4334946d7adee28ab9b460', 'test': True, 'timestamp': '2025-06-10T17:12:46.127132', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616179943, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_b2e98fada6877c144b505de7d82f7cb8', 'role': 'user', 'session_id': 'session_4368dd544bfa465f79a84a98d618c6f2', 'test': True, 'timestamp': '2025-06-10T14:47:11.270578', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616179943, 'source': 'vector'}], nas_entries=[], relevance_score=0.43132910618000003, search_query='about python?')
+2025-06-10 17:33:17,366 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:33:17,400 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:33:17,445 - trinity - INFO - Created session: session_68c94a005891bda96ee5fa7c4ed3eb49
+2025-06-10 17:33:17,955 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:33:18,480 - trinity - INFO - search results:MemoryContext(vector_results=[{'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_71ac2bb27b982886594ca4deb627257e', 'role': 'user', 'session_id': 'session_749c165fd87de86257f407cc9d11629a', 'test': True, 'timestamp': '2025-06-10T16:54:44.682956', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616288841, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_0904f5a575ac986a18bfccd087161fe8', 'role': 'user', 'session_id': 'session_391d13969f28afabcb0b0db2e8764ab5', 'test': True, 'timestamp': '2025-06-10T14:45:41.861165', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616288781, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_65f8d96e124cefcce01642d6afc37772', 'role': 'user', 'session_id': 'session_f181b056663be111a74a5afdcb77a94a', 'test': True, 'timestamp': '2025-06-10T16:50:06.064439', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616288781, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_b2e98fada6877c144b505de7d82f7cb8', 'role': 'user', 'session_id': 'session_4368dd544bfa465f79a84a98d618c6f2', 'test': True, 'timestamp': '2025-06-10T14:47:11.270578', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.61628139, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_f976882e2bf0ab294ebaa4e63510d7ef', 'role': 'user', 'session_id': 'session_210723bf0ebaa35de9c3c0b57354c90e', 'test': True, 'timestamp': '2025-06-10T15:05:53.452872', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.61628139, 'source': 'vector'}], nas_entries=[], relevance_score=0.43140008562, search_query='about python?')
+2025-06-10 17:39:45,249 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:39:45,256 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:39:45,299 - trinity - INFO - Created session: session_3bfb882c8b84b38396405176d6198005
+2025-06-10 17:39:45,788 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:39:46,449 - trinity - INFO - search results:MemoryContext(vector_results=[{'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_71ac2bb27b982886594ca4deb627257e', 'role': 'user', 'session_id': 'session_749c165fd87de86257f407cc9d11629a', 'test': True, 'timestamp': '2025-06-10T16:54:44.682956', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616187513, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_0904f5a575ac986a18bfccd087161fe8', 'role': 'user', 'session_id': 'session_391d13969f28afabcb0b0db2e8764ab5', 'test': True, 'timestamp': '2025-06-10T14:45:41.861165', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616187394, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_65f8d96e124cefcce01642d6afc37772', 'role': 'user', 'session_id': 'session_f181b056663be111a74a5afdcb77a94a', 'test': True, 'timestamp': '2025-06-10T16:50:06.064439', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616187394, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_d4fa9ac6da3855f5a025eaebe82fbc2f', 'role': 'user', 'session_id': 'session_413d3f642ec6b6b71373ab0cc20ec286', 'test': True, 'timestamp': '2025-06-10T16:55:17.678062', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616179943, 'source': 'vector'}, {'content': 'Hello, I want to learn about Python programming', 'metadata': {'entry_id': 'entry_b2e98fada6877c144b505de7d82f7cb8', 'role': 'user', 'session_id': 'session_4368dd544bfa465f79a84a98d618c6f2', 'test': True, 'timestamp': '2025-06-10T14:47:11.270578', 'type': 'conversation', 'user_id': 'test_user_123'}, 'relevance_score': 0.616179943, 'source': 'vector'}], nas_entries=[], relevance_score=0.43132910618000003, search_query='about python?')
+2025-06-10 17:45:29,252 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:45:29,261 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:47:04,908 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:47:04,923 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:47:05,750 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:06,606 - trinity - INFO - Stored conversation entry in vector DB: entry_468878a6989f926ebe70ba3a6368be23
+2025-06-10 17:47:06,607 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:47:08,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:47:08,590 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:47:09,171 - trinity - INFO - Uploaded file: temp/session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_174708.json -> /home/trinityai/memory/categories/sessions/session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_174708.json
+2025-06-10 17:47:11,546 - trinity - INFO - Uploaded file to Google Drive: session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_174708.json
+2025-06-10 17:47:16,930 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 17:47:16,932 - trinity - INFO - Added conversation message: entry_468878a6989f926ebe70ba3a6368be23
+2025-06-10 17:47:19,390 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:20,046 - trinity - INFO - Stored conversation entry in vector DB: entry_8d4f32533713dbb1208efadbe719bbb3
+2025-06-10 17:47:20,047 - trinity - INFO - Added conversation message: entry_8d4f32533713dbb1208efadbe719bbb3
+2025-06-10 17:47:20,295 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:20,901 - trinity - INFO - Stored conversation entry in vector DB: entry_8063f028d5194d4c871f6d64990e43e1
+2025-06-10 17:47:20,902 - trinity - INFO - Added conversation message: entry_8063f028d5194d4c871f6d64990e43e1
+2025-06-10 17:47:21,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:21,750 - trinity - INFO - Stored conversation entry in vector DB: entry_d3bee6ba1ec02260bee958a54573868d
+2025-06-10 17:47:21,756 - trinity - INFO - Added conversation message: entry_d3bee6ba1ec02260bee958a54573868d
+2025-06-10 17:47:21,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:22,702 - trinity - INFO - Stored conversation entry in vector DB: entry_64c0e200c3190a3438aad493db42da61
+2025-06-10 17:47:22,703 - trinity - INFO - Added conversation message: entry_64c0e200c3190a3438aad493db42da61
+2025-06-10 17:47:22,900 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:23,544 - trinity - INFO - Stored conversation entry in vector DB: entry_0e3eae0429e747bd65f0ad5580e42704
+2025-06-10 17:47:23,546 - trinity - INFO - Added conversation message: entry_0e3eae0429e747bd65f0ad5580e42704
+2025-06-10 17:47:24,050 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:24,708 - trinity - INFO - Stored conversation entry in vector DB: entry_3d29a1eb28e01635d018344fcb78381a
+2025-06-10 17:47:24,710 - trinity - INFO - Added conversation message: entry_3d29a1eb28e01635d018344fcb78381a
+2025-06-10 17:47:24,973 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:25,610 - trinity - INFO - Stored conversation entry in vector DB: entry_7bb0ed5bf5f274ab583a225f12a988d7
+2025-06-10 17:47:25,611 - trinity - INFO - Added conversation message: entry_7bb0ed5bf5f274ab583a225f12a988d7
+2025-06-10 17:47:25,825 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:47:26,442 - trinity - INFO - Stored conversation entry in vector DB: entry_a96dcbe7816084e0378f59852a686c4f
+2025-06-10 17:47:26,444 - trinity - INFO - Added conversation message: entry_a96dcbe7816084e0378f59852a686c4f
+2025-06-10 17:49:15,462 - trinity - INFO - Successfully connected to NAS
+2025-06-10 17:49:15,472 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 17:49:15,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:16,920 - trinity - INFO - Stored conversation entry in vector DB: entry_cf020f171502e57b31160d981548b0c3
+2025-06-10 17:49:16,921 - trinity - INFO - =========user: Remember this important information about AI safety protocols
+2025-06-10 17:49:16,922 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 17:49:17,388 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:49:17,796 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 17:49:18,371 - trinity - INFO - Uploaded file: temp/session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_174917.json -> /home/trinityai/memory/categories/sessions/session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_174917.json
+2025-06-10 17:49:20,720 - trinity - INFO - Uploaded file to Google Drive: session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_174917.json
+2025-06-10 17:49:25,852 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 17:49:25,855 - trinity - INFO - Added conversation message: entry_cf020f171502e57b31160d981548b0c3
+2025-06-10 17:49:28,111 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:28,744 - trinity - INFO - Stored conversation entry in vector DB: entry_943ea988d4704af5b4c8eb9f45c1b888
+2025-06-10 17:49:28,746 - trinity - INFO - Added conversation message: entry_943ea988d4704af5b4c8eb9f45c1b888
+2025-06-10 17:49:28,934 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:29,576 - trinity - INFO - Stored conversation entry in vector DB: entry_2a4cc7d3984934f82ffacf6d2ff68874
+2025-06-10 17:49:29,577 - trinity - INFO - Added conversation message: entry_2a4cc7d3984934f82ffacf6d2ff68874
+2025-06-10 17:49:29,804 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:30,458 - trinity - INFO - Stored conversation entry in vector DB: entry_91f8edbdcf5e3e3199ae5e37a4e0c6ab
+2025-06-10 17:49:30,459 - trinity - INFO - Added conversation message: entry_91f8edbdcf5e3e3199ae5e37a4e0c6ab
+2025-06-10 17:49:30,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:31,311 - trinity - INFO - Stored conversation entry in vector DB: entry_85526d6355ea385666d7c5b9b2e06e43
+2025-06-10 17:49:31,317 - trinity - INFO - Added conversation message: entry_85526d6355ea385666d7c5b9b2e06e43
+2025-06-10 17:49:32,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:32,645 - trinity - INFO - Stored conversation entry in vector DB: entry_4bdf7461e07a319019aae20e84b4fc49
+2025-06-10 17:49:32,646 - trinity - INFO - Added conversation message: entry_4bdf7461e07a319019aae20e84b4fc49
+2025-06-10 17:49:32,930 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:33,636 - trinity - INFO - Stored conversation entry in vector DB: entry_8acefbf22752a065d3339e45b378557a
+2025-06-10 17:49:33,637 - trinity - INFO - Added conversation message: entry_8acefbf22752a065d3339e45b378557a
+2025-06-10 17:49:33,846 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:34,471 - trinity - INFO - Stored conversation entry in vector DB: entry_79de18cc957d259feb1449d433334dbf
+2025-06-10 17:49:34,475 - trinity - INFO - Added conversation message: entry_79de18cc957d259feb1449d433334dbf
+2025-06-10 17:49:34,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 17:49:35,325 - trinity - INFO - Stored conversation entry in vector DB: entry_6b000edb4f28f119e196d3cd69158dd8
+2025-06-10 17:49:35,453 - trinity - INFO - Added conversation message: entry_6b000edb4f28f119e196d3cd69158dd8
+2025-06-10 18:11:26,739 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:11:26,837 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:11:27,657 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:28,414 - trinity - INFO - Stored conversation entry in vector DB: entry_4ae8161cdce742a96e7256e0479bbecc
+2025-06-10 18:11:28,415 - trinity - INFO - conversation_text:{conversation_text}
+2025-06-10 18:11:29,946 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 18:11:30,439 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 18:11:31,029 - trinity - INFO - Uploaded file: temp/session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_181130.json -> /home/trinityai/memory/categories/sessions/session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_181130.json
+2025-06-10 18:11:33,418 - trinity - INFO - Uploaded file to Google Drive: session_session_4368dd544bfa465f79a84a98d618c6f2_20250610_181130.json
+2025-06-10 18:11:38,539 - trinity - ERROR - Failed to save session to NAS: database is locked
+2025-06-10 18:11:38,540 - trinity - INFO - Added conversation message: entry_4ae8161cdce742a96e7256e0479bbecc
+2025-06-10 18:11:40,769 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:41,421 - trinity - INFO - Stored conversation entry in vector DB: entry_e3474e51b0b97597d1cdf875c7d14500
+2025-06-10 18:11:41,424 - trinity - INFO - Added conversation message: entry_e3474e51b0b97597d1cdf875c7d14500
+2025-06-10 18:11:41,598 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:42,234 - trinity - INFO - Stored conversation entry in vector DB: entry_4bc232db229bbfdd476c40026bca368d
+2025-06-10 18:11:42,237 - trinity - INFO - Added conversation message: entry_4bc232db229bbfdd476c40026bca368d
+2025-06-10 18:11:42,436 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:43,172 - trinity - INFO - Stored conversation entry in vector DB: entry_b9030b95aad822855c345dcee86b89fc
+2025-06-10 18:11:43,174 - trinity - INFO - Added conversation message: entry_b9030b95aad822855c345dcee86b89fc
+2025-06-10 18:11:43,488 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:44,127 - trinity - INFO - Stored conversation entry in vector DB: entry_25fcf40a618c37fee209453c4dd40f73
+2025-06-10 18:11:44,129 - trinity - INFO - Added conversation message: entry_25fcf40a618c37fee209453c4dd40f73
+2025-06-10 18:11:45,661 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:46,613 - trinity - INFO - Stored conversation entry in vector DB: entry_a613e04d1a7fc4ef241c3711f4601bbf
+2025-06-10 18:11:46,614 - trinity - INFO - Added conversation message: entry_a613e04d1a7fc4ef241c3711f4601bbf
+2025-06-10 18:11:47,117 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:47,712 - trinity - INFO - Stored conversation entry in vector DB: entry_5319514fa495acd496b0c4239fd8609f
+2025-06-10 18:11:47,714 - trinity - INFO - Added conversation message: entry_5319514fa495acd496b0c4239fd8609f
+2025-06-10 18:11:47,924 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:48,549 - trinity - INFO - Stored conversation entry in vector DB: entry_39e332f06fc819c577926035c65d681a
+2025-06-10 18:11:48,551 - trinity - INFO - Added conversation message: entry_39e332f06fc819c577926035c65d681a
+2025-06-10 18:11:48,965 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:11:49,597 - trinity - INFO - Stored conversation entry in vector DB: entry_563e3d594f789653a14603a5e031e7a9
+2025-06-10 18:11:49,598 - trinity - INFO - Added conversation message: entry_563e3d594f789653a14603a5e031e7a9
+2025-06-10 18:12:36,811 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:12:36,838 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:13:20,100 - trinity - INFO - Starting Trinity Memory System...
+2025-06-10 18:13:20,101 - trinity - INFO - Initializing memory system...
+2025-06-10 18:13:22,129 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:13:22,190 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:13:22,245 - trinity - INFO - memory system initialized successfully
+2025-06-10 18:13:22,250 - trinity - INFO - Memory listener started in background
+2025-06-10 18:13:22,256 - trinity - INFO - Memory listener started in background
+2025-06-10 18:13:22,259 - trinity - INFO - System health check - all components running
+2025-06-10 18:13:22,259 - trinity - INFO - Health monitor started
+2025-06-10 18:13:22,263 - trinity - INFO - API server started at http://localhost:5000
+2025-06-10 18:13:22,275 - trinity - INFO - Trinity Enhanced Memory System is running!
+2025-06-10 18:13:22,275 - trinity - INFO - Features enabled:
+2025-06-10 18:13:22,276 - trinity - INFO -    • Vector-based fast memory (Pinecone)
+2025-06-10 18:13:22,276 - trinity - INFO -    • Persistent NAS storage
+2025-06-10 18:13:22,276 - trinity - INFO -    • Conversation tracking
+2025-06-10 18:13:22,276 - trinity - INFO -    • Auto-summarization
+2025-06-10 18:13:22,277 - trinity - INFO -    • File watching
+2025-06-10 18:13:22,277 - trinity - INFO - Watching directories: ['data/inbox', 'data/manual_input']
+2025-06-10 18:13:22,277 - trinity - INFO - API available at: http://localhost:5000
+2025-06-10 18:13:22,277 - trinity - INFO - Health check: http://localhost:5000/api/health
+2025-06-10 18:13:22,278 - trinity - INFO - Press Ctrl+C to stop
+2025-06-10 18:13:22,488 - trinity - INFO - Starting Trinity Memory System API
+2025-06-10 18:13:23,471 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:13:23,474 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:13:23,482 - trinity - INFO - Watching directory: data/inbox
+2025-06-10 18:13:23,484 - trinity - INFO - Watching directory: data/manual_input
+2025-06-10 18:13:23,486 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-10 18:13:23,489 - trinity - INFO - Started watching: data/inbox
+2025-06-10 18:13:23,489 - trinity - INFO - Started watching: data/manual_input
+2025-06-10 18:13:23,499 - trinity - INFO - Memory listener started successfully
+2025-06-10 18:13:23,500 - trinity - INFO - Watching 2 directories:
+2025-06-10 18:13:23,500 - trinity - INFO -    - C:\trinity\data\inbox
+2025-06-10 18:13:23,501 - trinity - INFO -    - C:\trinity\data\manual_input
+2025-06-10 18:13:23,501 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-10 18:13:23,501 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-10 18:13:23,812 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:13:23,815 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:13:23,822 - trinity - INFO - Watching directory: data/inbox
+2025-06-10 18:13:23,823 - trinity - INFO - Watching directory: data/manual_input
+2025-06-10 18:13:23,824 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-10 18:13:23,825 - trinity - INFO - Started watching: data/inbox
+2025-06-10 18:13:23,825 - trinity - INFO - Started watching: data/manual_input
+2025-06-10 18:13:23,870 - trinity - INFO - Memory listener started successfully
+2025-06-10 18:13:23,872 - trinity - INFO - Watching 2 directories:
+2025-06-10 18:13:23,873 - trinity - INFO -    - C:\trinity\data\inbox
+2025-06-10 18:13:23,875 - trinity - INFO -    - C:\trinity\data\manual_input
+2025-06-10 18:13:23,876 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-10 18:13:23,879 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-10 18:13:25,340 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:13:25,346 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:13:25,355 - trinity - INFO - memory manager initialized successfully
+2025-06-10 18:15:00,051 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:15:00,594 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:15:12,989 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:15:12,997 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:15:13,498 - trinity - INFO - Created session: session_627567e03724a7647c17670575658fa6
+2025-06-10 18:15:14,038 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:15:15,220 - trinity - INFO - Stored conversation entry in vector DB: entry_29b190ae26222db94d5ba51ef81dde9c
+2025-06-10 18:15:15,222 - trinity - INFO - Added conversation message: entry_29b190ae26222db94d5ba51ef81dde9c
+2025-06-10 18:15:15,567 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:16:05,769 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:16:05,775 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:17:30,334 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:17:30,341 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:17:30,397 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:18:45,950 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:18:45,961 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:18:46,029 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:20:00,020 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:20:00,450 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:21:43,659 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:21:43,665 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:21:43,733 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:24:56,272 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:24:56,288 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:24:56,371 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:25:00,429 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:25:00,728 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:25:21,273 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:25:21,285 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:25:21,369 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:25:49,588 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:25:49,596 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:25:49,663 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:29:22,781 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:29:22,788 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:29:22,858 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:30:00,280 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:30:00,836 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:35:00,349 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:35:00,660 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:35:45,975 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:35:45,983 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:35:46,071 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:36:43,464 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:36:43,473 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:36:43,526 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:39:02,179 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:39:02,186 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:39:02,270 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:39:21,976 - trinity - INFO - Received shutdown signal
+2025-06-10 18:39:28,655 - trinity - INFO - Starting Trinity Memory System...
+2025-06-10 18:39:28,657 - trinity - INFO - Initializing memory system...
+2025-06-10 18:39:30,648 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:39:30,656 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:39:30,695 - trinity - INFO - memory system initialized successfully
+2025-06-10 18:39:30,698 - trinity - INFO - Memory listener started in background
+2025-06-10 18:39:30,700 - trinity - INFO - Memory listener started in background
+2025-06-10 18:39:30,701 - trinity - INFO - System health check - all components running
+2025-06-10 18:39:30,702 - trinity - INFO - Health monitor started
+2025-06-10 18:39:30,703 - trinity - INFO - API server started at http://localhost:5000
+2025-06-10 18:39:30,705 - trinity - INFO - Trinity Enhanced Memory System is running!
+2025-06-10 18:39:30,705 - trinity - INFO - Features enabled:
+2025-06-10 18:39:30,705 - trinity - INFO -    • Vector-based fast memory (Pinecone)
+2025-06-10 18:39:30,706 - trinity - INFO -    • Persistent NAS storage
+2025-06-10 18:39:30,706 - trinity - INFO -    • Conversation tracking
+2025-06-10 18:39:30,706 - trinity - INFO -    • Auto-summarization
+2025-06-10 18:39:30,706 - trinity - INFO -    • File watching
+2025-06-10 18:39:30,707 - trinity - INFO - Watching directories: ['data/inbox', 'data/manual_input']
+2025-06-10 18:39:30,707 - trinity - INFO - API available at: http://localhost:5000
+2025-06-10 18:39:30,707 - trinity - INFO - Health check: http://localhost:5000/api/health
+2025-06-10 18:39:30,708 - trinity - INFO - Press Ctrl+C to stop
+2025-06-10 18:39:30,894 - trinity - INFO - Starting Trinity Memory System API
+2025-06-10 18:39:31,989 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:39:31,992 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:39:31,996 - trinity - INFO - Watching directory: data/inbox
+2025-06-10 18:39:31,996 - trinity - INFO - Watching directory: data/manual_input
+2025-06-10 18:39:31,997 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-10 18:39:31,997 - trinity - INFO - Started watching: data/inbox
+2025-06-10 18:39:31,997 - trinity - INFO - Started watching: data/manual_input
+2025-06-10 18:39:32,004 - trinity - INFO - Memory listener started successfully
+2025-06-10 18:39:32,004 - trinity - INFO - Watching 2 directories:
+2025-06-10 18:39:32,005 - trinity - INFO -    - C:\trinity\data\inbox
+2025-06-10 18:39:32,005 - trinity - INFO -    - C:\trinity\data\manual_input
+2025-06-10 18:39:32,005 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-10 18:39:32,006 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-10 18:39:32,291 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:39:32,294 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:39:32,303 - trinity - INFO - Watching directory: data/inbox
+2025-06-10 18:39:32,303 - trinity - INFO - Watching directory: data/manual_input
+2025-06-10 18:39:32,303 - trinity - INFO - Starting Trinity Memory Listener...
+2025-06-10 18:39:32,304 - trinity - INFO - Started watching: data/inbox
+2025-06-10 18:39:32,304 - trinity - INFO - Started watching: data/manual_input
+2025-06-10 18:39:32,305 - trinity - INFO - Memory listener started successfully
+2025-06-10 18:39:32,305 - trinity - INFO - Watching 2 directories:
+2025-06-10 18:39:32,305 - trinity - INFO -    - C:\trinity\data\inbox
+2025-06-10 18:39:32,305 - trinity - INFO -    - C:\trinity\data\manual_input
+2025-06-10 18:39:32,306 - trinity - INFO - Drop text files in watch directories to create memories
+2025-06-10 18:39:32,306 - trinity - INFO - Use commands like: 'Save this:', 'Tags:', 'Category:'
+2025-06-10 18:39:32,649 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:39:32,652 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:39:32,658 - trinity - INFO - memory manager initialized successfully
+2025-06-10 18:39:44,176 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:39:44,183 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:39:44,244 - trinity - ERROR - Session summarization failed: 404: Session not found
+2025-06-10 18:40:00,051 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:40:00,326 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:42:14,139 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:42:14,146 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:42:14,763 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:42:15,581 - trinity - INFO - Stored conversation entry in vector DB: test_vector_entry
+2025-06-10 18:42:15,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-10 18:43:18,899 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:43:18,906 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:43:18,955 - trinity - INFO - New file detected: data/inbox\test_vector_memory.txt
+2025-06-10 18:43:18,956 - trinity - INFO - New file detected: data/inbox\test_vector_memory.txt
+2025-06-10 18:43:18,969 - trinity - INFO - New file detected: data/inbox\test_conversation.txt
+2025-06-10 18:43:18,974 - trinity - INFO - Processing file: data/inbox\test_vector_memory.txt
+2025-06-10 18:43:18,981 - trinity - INFO - New file detected: data/inbox\test_conversation.txt
+2025-06-10 18:43:18,983 - trinity - INFO - Processing file: data/inbox\test_vector_memory.txt
+2025-06-10 18:43:18,984 - trinity - INFO - Processing file: data/inbox\test_conversation.txt
+2025-06-10 18:43:18,984 - trinity - INFO - Processing file: data/inbox\test_conversation.txt
+2025-06-10 18:43:20,983 - trinity - WARNING - File no longer exists: data/inbox\test_vector_memory.txt
+2025-06-10 18:43:20,983 - trinity - WARNING - File no longer exists: data/inbox\test_vector_memory.txt
+2025-06-10 18:43:20,984 - trinity - WARNING - File no longer exists: data/inbox\test_conversation.txt
+2025-06-10 18:43:20,984 - trinity - WARNING - File no longer exists: data/inbox\test_conversation.txt
+2025-06-10 18:44:29,189 - trinity - INFO - Successfully connected to NAS
+2025-06-10 18:44:29,205 - trinity - INFO - Successfully authenticated with Google Drive
+2025-06-10 18:44:29,701 - trinity - INFO - Cleaning up vector entries older than 1 days
+2025-06-10 18:45:00,637 - trinity - INFO - Status - Processed: 0, Failed: 0
+2025-06-10 18:45:00,919 - trinity - INFO - Status - Processed: 0, Failed: 0

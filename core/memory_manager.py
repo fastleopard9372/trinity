@@ -375,7 +375,6 @@ class MemoryManager:
         try:
             # Get session entries
             entries = self.session_manager.get_session_entries(session_id)
-            
             if not entries:
                 logger.warning(f"No entries found for session: {session_id}")
                 return False
@@ -384,7 +383,7 @@ class MemoryManager:
             conversation_text = "\n".join([
                 f"{entry.role}: {entry.content}" for entry in entries
             ])
-            
+            logger.info("conversation_text:{conversation_text}")
             docs = [Document(page_content=conversation_text)]
             summary = await asyncio.to_thread(
                 self.summarize_chain.run, docs
@@ -412,7 +411,6 @@ class MemoryManager:
             # Save to NAS
             filename = f"session_{session_id}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
             nas_path = await self._save_session_data_to_nas(session_data, filename)
-            logger.log("-----------------------save----------------------")
             # Save to database for indexing
             memory_data = {
                 "content": summary,
@@ -448,11 +446,6 @@ class MemoryManager:
     async def _save_session_data_to_nas(self, session_data: Dict, filename: str) -> str:
         """Save session data to NAS and Google Drive"""
         # Save to temp file first
-        temp_file = f"temp/{filename}"
-        os.makedirs("temp", exist_ok=True)
-        
-        with open(temp_file, 'w', encoding='utf-8') as f:
-            json.dump(session_data, f, indent=2, ensure_ascii=False)
         
         # Upload to NAS
         nas_path = self.nas_client.save_memory_content(
@@ -460,12 +453,17 @@ class MemoryManager:
             "sessions",
             filename
         )
-        
+
+        temp_file = f"temp/{filename}"
+        os.makedirs("temp", exist_ok=True)
+        with open(temp_file, 'w', encoding='utf-8') as f:
+            json.dump(session_data, f, indent=2, ensure_ascii=False)
+
         # Upload to Google Drive
         gdrive_file_id = self.gdrive_client.upload_file(
             temp_file,
             filename,
-            self.gdrive_client.folder_id
+            self.gdrive_client._get_folder_id(f"trinity_memory/categories/sessions")
         )
         
         # Cleanup

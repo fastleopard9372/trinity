@@ -63,6 +63,7 @@ class GoogleDriveClient:
             "trinity_memory/categories/ideas",
             "trinity_memory/categories/tasks",
             "trinity_memory/categories/jobs",
+            "trinity_memory/categories/sessions",
             "trinity_memory/logs",
             "trinity_memory/metadata",
             "trinity_memory/backups"

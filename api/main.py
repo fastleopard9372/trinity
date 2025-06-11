@@ -196,6 +196,7 @@ async def summarize_session(request: SessionSummaryRequest):
         nas_path = None
         
         if request.force_save or len(entries) >= memory_manager.auto_save_config["min_messages"]:
+            
             success = await memory_manager.save_session_to_nas(
                 request.session_id, 
                 reason="manual" if request.force_save else "threshold"

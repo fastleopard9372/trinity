@@ -321,7 +321,7 @@ class DatabaseManager:
         
         return query.order_by(MemoryRecord.timestamp.desc()).limit(limit).all()
     
-    def search_memories(self, keyword: str, limit: int = 50) -> List[MemoryRecord]:
+    def search_memories(self, keyword: str, limit: int = 0) -> List[MemoryRecord]:
         return self.session.query(MemoryRecord).filter(
             MemoryRecord.content.contains(keyword)
         ).order_by(MemoryRecord.timestamp.desc()).limit(limit).all()

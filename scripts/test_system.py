@@ -25,7 +25,7 @@ from utils.logger import logger
 class SystemTester:
     def __init__(self):
         self.base_url = f"http://{settings.api_host}:{settings.api_port}"
-        self.test_session_id = None
+        self.test_session_id = "session_019f97afe8fc08abe62e0787176b1982"
         self.test_user_id = "test_user_123"
         self.memory_manager = None
         
@@ -77,10 +77,9 @@ class SystemTester:
             
             # Test semantic search
             search_results = await self.memory_manager.search_memory(
-                "Python programming data structures",
+                "about python?",
                 user_id=self.test_user_id
             )
-            
             print(f"  Search found {len(search_results.vector_results)} vector results")
             print(f"  Search found {len(search_results.nas_entries)} NAS results")
             print(f"  Relevance score: {search_results.relevance_score:.2f}")
@@ -277,7 +276,7 @@ Category: conversations
     async def test_auto_save_triggers(self):
         """Test auto-save trigger functionality"""
         print("\n💾 Testing Auto-Save Triggers...")
-        
+        self.test_session_id = "session_4368dd544bfa465f79a84a98d618c6f2"
         try:
             if not self.test_session_id:
                 print("❌ No test session available")
@@ -448,36 +447,36 @@ Category: conversations
         
         try:
             # Test direct vector storage
-            # test_entry = ConversationEntry(
-            #     id="test_vector_entry",
-            #     session_id="test_session",
-            #     user_id=self.test_user_id,
-            #     content="This is a test entry for vector database functionality with machine learning concepts",
-            #     role="user",
-            #     timestamp=datetime.now(),
-            #     metadata={"test": True, "concept": "machine_learning"}
-            # )
+            test_entry = ConversationEntry(
+                id="test_vector_entry",
+                session_id="test_session",
+                user_id=self.test_user_id,
+                content="This is a test entry for vector database functionality with machine learning concepts",
+                role="user",
+                timestamp=datetime.now(),
+                metadata={"test": True, "concept": "machine_learning"}
+            )
             
-            # success = await self.memory_manager.vector_manager.store_conversation_entry(test_entry)
-            # if success:
-            #     print("✅ Vector storage successful")
-            # else:
-            #     print("❌ Vector storage failed")
-            #     return False
+            success = await self.memory_manager.vector_manager.store_conversation_entry(test_entry)
+            if success:
+                print("✅ Vector storage successful")
+            else:
+                print("❌ Vector storage failed")
+                return False
             
-            # # Test vector search
-            # results = await self.memory_manager.vector_manager.semantic_search(
-            #     "machine learning concepts",
-            #     k=3
-            # )
+            # Test vector search
+            results = await self.memory_manager.vector_manager.semantic_search(
+                "machine learning concepts",
+                k=3
+            )
             
-            # if results:
-            #     print(f"✅ Vector search successful: {len(results)} results")
-            #     for i, result in enumerate(results[:2]):
-            #         print(f"  Result {i+1}: Score {result['relevance_score']:.3f}")
-            # else:
-            #     print("❌ Vector search returned no results")
-            #     return False
+            if results:
+                print(f"✅ Vector search successful: {len(results)} results")
+                for i, result in enumerate(results[:2]):
+                    print(f"  Result {i+1}: Score {result['relevance_score']:.3f}")
+            else:
+                print("❌ Vector search returned no results")
+                return False
             
             return True
             
@@ -498,14 +497,14 @@ async def main():
     
     # Run all tests
     tests = [
-        ("Memory Core", await tester.test_memory_core()),
+        # ("Memory Core", await tester.test_memory_core()),
         # ("Auto-Save Triggers", tester.test_auto_save_triggers()),
         # ("API Endpoints", tester.test_api_endpoints()),
         # ("Session Management", tester.test_session_management()),
         # ("Vector Database", tester.test_vector_database()),
         # ("File Watcher Integration", tester.test_file_watcher_integration()),
-        # ("Analytics Endpoints", tester.test_analytics_endpoints()),
-        # ("Background Tasks", tester.test_background_tasks()),
+        ("Analytics Endpoints", tester.test_analytics_endpoints()),
+        ("Background Tasks", tester.test_background_tasks()),
         # ("Performance", tester.test_performance())
     ]
     
