@@ -12,7 +12,7 @@ from datetime import timedelta
 # Add parent directory to path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from core.memory_manager import DualMemoryManager
+from core.memory_manager import MemoryManager
 from config.settings import settings
 from utils.logger import logger
 
@@ -64,7 +64,7 @@ def get_memory_manager():
     """Get or create memory manager instance"""
     global memory_manager
     if memory_manager is None:
-        memory_manager = DualMemoryManager()
+        memory_manager = MemoryManager()
     return memory_manager
 
 @celery_app.task(bind=True)
